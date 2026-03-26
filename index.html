@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サントリー | 水と生きる SUNTORY</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- ========== HEADER ========== -->
+    <header id="header">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <svg class="header__logo-svg" viewBox="0 0 240 40">
+            <text x="0" y="30" class="logo-text">SUNTORY</text>
+          </svg>
+        </a>
+        <nav class="header__nav pc-only">
+          <ul class="header__nav-list">
+            <!-- ===== 商品情報（メガメニューなし） ===== -->
+            <li class="header__nav-item">
+              <a href="products.html">商品情報</a>
+            </li>
+            <!-- ===== 知る・楽しむ ===== -->
+            <li class="header__nav-item has-mega">
+              <a href="enjoy.html">知る・楽しむ</a>
+              <div class="mega-menu mega-menu--full mega-menu--grid">
+                <div class="mega-grid-inner">
+                  <!-- TOP リンク -->
+                  <div class="mega-grid__top">
+                    <a href="https://ssl1.suntory.co.jp/enjoy/?ke=mn" class="mega-grid__top-link" target="_blank" rel="noopener">知る・楽しむTOP<span class="mega-grid__arw">&rsaquo;</span></a>
+                  </div>
+                  <!-- 2大カテゴリ -->
+                  <div class="mega-grid__sections">
+                    <!-- キャンペーン -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">キャンペーン</h4>
+                      <div class="mega-grid__cards mega-grid__cards--single">
+                        <a href="index.html#campaigns" class="mega-grid__card">キャンペーン一覧<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">会員限定ポイントをためる<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">会員限定ポイントをつかう<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                    <!-- 知る・体感する -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">知る・体感する</h4>
+                      <div class="mega-grid__cards mega-grid__cards--single">
+                        <a href="enjoy/distillery.html#details" class="mega-grid__card">工場見学へ行こう<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">地域情報<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="enjoy/cm.html#details" class="mega-grid__card">CM・動画（公式YouTube）<span class="mega-menu__external" style="margin-left:6px;">&#x2197;</span><span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 閉じるボタン -->
+                  <div class="mega-grid__close">
+                    <button class="mega-grid__close-btn js-mega-close">&times; 閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- ===== 文化・スポーツ ===== -->
+            <li class="header__nav-item has-mega">
+              <a href="culture.html">文化・スポーツ</a>
+              <div class="mega-menu mega-menu--full mega-menu--grid">
+                <div class="mega-grid-inner">
+                  <!-- TOP リンク -->
+                  <div class="mega-grid__top">
+                    <a href="culture.html" class="mega-grid__top-link">文化・スポーツTOP<span class="mega-grid__arw">&rsaquo;</span></a>
+                  </div>
+                  <!-- 2大カテゴリ -->
+                  <div class="mega-grid__sections">
+                    <!-- 芸術・文化・学術 -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">芸術・文化・学術</h4>
+                      <div class="mega-grid__cards">
+                        <a href="culture.html#art" class="mega-grid__card">サントリーホール<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="culture.html#art" class="mega-grid__card">サントリー美術館<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="culture.html#art" class="mega-grid__card">サントリー芸術財団<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="culture.html#academic" class="mega-grid__card">サントリー文化財団<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">サントリー生命科学財団<span class="mega-menu__external" style="margin-left:6px;">&#x2197;</span><span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">サントリー1万人の第九<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                    <!-- スポーツ -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">スポーツ</h4>
+                      <div class="mega-grid__cards">
+                        <a href="culture.html#sports" class="mega-grid__card">ラグビーチーム<br><strong>東京サントリーサンゴリアス</strong><span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="culture.html#sports" class="mega-grid__card">バレーボールチーム<br><strong>サントリーサンバーズ大阪</strong><span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">宮里藍<br><strong>サントリーレディスオープン</strong><span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">サントリードリームマッチ<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">チャレンジド・スポーツ<br><strong>プロジェクト</strong><span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="culture.html#sports" class="mega-grid__card">サントリーのスポーツ活動<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 閉じるボタン -->
+                  <div class="mega-grid__close">
+                    <button class="mega-grid__close-btn js-mega-close">&times; 閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- ===== サステナビリティ ===== -->
+            <li class="header__nav-item has-mega">
+              <a href="sustainability.html">サステナビリティ</a>
+              <div class="mega-menu mega-menu--full mega-menu--grid">
+                <div class="mega-grid-inner">
+                  <!-- TOP リンク -->
+                  <div class="mega-grid__top">
+                    <a href="https://www.suntory.co.jp/sustainability/?ke=mn" class="mega-grid__top-link" target="_blank" rel="noopener">サステナビリティTOP<span class="mega-grid__arw">&rsaquo;</span></a>
+                  </div>
+                  <!-- 2大カテゴリ -->
+                  <div class="mega-grid__sections">
+                    <!-- サントリーグループのサステナビリティ経営 -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">サントリーグループのサステナビリティ経営</h4>
+                      <div class="mega-grid__cards">
+                        <a href="sustainability.html" class="mega-grid__card">ESG情報ポータルTOP<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="sustainability.html" class="mega-grid__card">トップメッセージ<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="sustainability.html" class="mega-grid__card">2030年目標<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="sustainability.html#water" class="mega-grid__card">Our Focus Areas<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                    <!-- 活動紹介サイト -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">活動紹介サイト</h4>
+                      <div class="mega-grid__cards">
+                        <a href="sustainability.html#water" class="mega-grid__card">サントリー 天然水の森<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">サントリーの愛鳥活動<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="sustainability.html#water" class="mega-grid__card">サントリー「水育」<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">サントリー サステなミライ<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="#" class="mega-grid__card">サステナビリティストーリーズ<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="sustainability.html#society" class="mega-grid__card">「人は資本」の経営<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 閉じるボタン -->
+                  <div class="mega-grid__close">
+                    <button class="mega-grid__close-btn js-mega-close">&times; 閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- ===== 企業情報 ===== -->
+            <li class="header__nav-item has-mega">
+              <a href="company.html">企業情報</a>
+              <div class="mega-menu mega-menu--full mega-menu--grid">
+                <div class="mega-grid-inner">
+                  <!-- TOP リンク -->
+                  <div class="mega-grid__top">
+                    <a href="company.html" class="mega-grid__top-link">企業情報TOP<span class="mega-grid__arw">&rsaquo;</span></a>
+                  </div>
+                  <!-- 4カテゴリ -->
+                  <div class="mega-grid__sections mega-grid__sections--four">
+                    <!-- 企業理念 -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">企業理念</h4>
+                      <div class="mega-grid__cards mega-grid__cards--single">
+                        <a href="company.html#philosophy" class="mega-grid__card">トップメッセージ<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html#philosophy" class="mega-grid__card">グループ企業理念<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html#philosophy" class="mega-grid__card">志がつなぐ<br>サントリーの企業活動<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                    <!-- 会社案内 -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">会社案内</h4>
+                      <div class="mega-grid__cards mega-grid__cards--single">
+                        <a href="company.html#overview" class="mega-grid__card">企業概要<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html#group" class="mega-grid__card">グループ企業一覧<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html#overview" class="mega-grid__card">事業所一覧<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html" class="mega-grid__card">事業紹介<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                    <!-- 財務・人材・採用 -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">財務・人材・採用</h4>
+                      <div class="mega-grid__cards mega-grid__cards--single">
+                        <a href="company.html#ir" class="mega-grid__card">財務情報<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html#recruit" class="mega-grid__card">採用情報<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html#recruit" class="mega-grid__card">「人は資本」の経営<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                    <!-- 品質・安全・技術 -->
+                    <div class="mega-grid__section">
+                      <h4 class="mega-grid__heading">品質・安全・技術</h4>
+                      <div class="mega-grid__cards mega-grid__cards--single">
+                        <a href="company.html" class="mega-grid__card">品質への取り組み<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html" class="mega-grid__card">研究開発への取り組み<span class="mega-grid__arw">&rsaquo;</span></a>
+                        <a href="company.html" class="mega-grid__card">デジタルへの取り組み<span class="mega-grid__arw">&rsaquo;</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 閉じるボタン -->
+                  <div class="mega-grid__close">
+                    <button class="mega-grid__close-btn js-mega-close">&times; 閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions pc-only">
+          <button class="header__search-btn" id="searchBtn" aria-label="検索">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="15" y1="15" x2="21" y2="21" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+        <button class="header__menu-btn sp-only" id="menuBtn" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div class="header__mobile-nav" id="mobileNav">
+        <ul>
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__toggle">商品情報<span class="mobile-nav__arrow">+</span></button>
+            <ul class="mobile-nav__sub">
+              <li class="mobile-nav__sub-heading">ウイスキー</li>
+              <li><a href="products/yamazaki.html#details">山崎</a></li>
+              <li><a href="products/hakushu.html#details">白州</a></li>
+              <li><a href="products/hibiki.html#details">響</a></li>
+              <li><a href="products/kakubin.html#details">角瓶</a></li>
+              <li class="mobile-nav__sub-heading">ビール</li>
+              <li><a href="products/premiummalts.html#details">ザ・プレミアム・モルツ</a></li>
+              <li><a href="products/kinmugi.html#details">金麦</a></li>
+              <li><a href="products/psb.html#details">パーフェクトサントリービール</a></li>
+              <li class="mobile-nav__sub-heading">チューハイ・RTD</li>
+              <li><a href="products/minus196.html#details">-196</a></li>
+              <li><a href="products/horoyoi.html#details">ほろよい</a></li>
+              <li><a href="products/lemonsour.html#details">こだわり酒場のレモンサワー</a></li>
+              <li class="mobile-nav__sub-heading">ワイン・スピリッツ</li>
+              <li><a href="products/sui.html#details">翠 SUI</a></li>
+              <li><a href="products/roku.html#details">ROKU 六</a></li>
+              <li><a href="products.html#fromfarm">SUNTORY FROM FARM</a></li>
+              <li><a href="products.html" class="mobile-nav__viewall">すべての商品を見る &rarr;</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__toggle">知る・楽しむ<span class="mobile-nav__arrow">+</span></button>
+            <ul class="mobile-nav__sub">
+              <li><a href="enjoy/distillery.html#details">蒸溜所・工場見学</a></li>
+              <li><a href="enjoy/whisky-guide.html#details">ウイスキーの愉しみ方</a></li>
+              <li><a href="enjoy/beer-guide.html#details">ビールのおいしい注ぎ方</a></li>
+              <li><a href="enjoy/wine-guide.html#details">ワインと食のマリアージュ</a></li>
+              <li><a href="enjoy/cocktail-guide.html#details">カクテルレシピ集</a></li>
+              <li><a href="enjoy/recipe.html#details">おつまみレシピ</a></li>
+              <li><a href="enjoy/cm.html#details">CM・動画ギャラリー</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__toggle">文化・スポーツ<span class="mobile-nav__arrow">+</span></button>
+            <ul class="mobile-nav__sub">
+              <li class="mobile-nav__sub-heading">音楽・芸術</li>
+              <li><a href="culture.html#art">サントリーホール</a></li>
+              <li><a href="culture.html#art">サントリー美術館</a></li>
+              <li><a href="culture.html#art">サントリー芸術財団</a></li>
+              <li class="mobile-nav__sub-heading">学術・社会</li>
+              <li><a href="culture.html#academic">サントリー文化財団</a></li>
+              <li><a href="culture.html#academic">サントリー学芸賞</a></li>
+              <li class="mobile-nav__sub-heading">スポーツ</li>
+              <li><a href="culture.html#sports">東京サントリーサンゴリアス</a></li>
+              <li><a href="culture.html#sports">サントリーサンバーズ大阪</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__toggle">サステナビリティ<span class="mobile-nav__arrow">+</span></button>
+            <ul class="mobile-nav__sub">
+              <li><a href="sustainability.html#water">水理念</a></li>
+              <li><a href="sustainability.html#water">天然水の森</a></li>
+              <li><a href="sustainability.html#water">水育（みずいく）</a></li>
+              <li><a href="sustainability.html#environment">環境ビジョン2050</a></li>
+              <li><a href="sustainability.html#environment">気候変動への対応</a></li>
+              <li><a href="sustainability.html#environment">プラスチック戦略</a></li>
+              <li><a href="sustainability.html#society">責任ある飲酒</a></li>
+              <li><a href="sustainability.html#society">ダイバーシティ</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__toggle">企業情報<span class="mobile-nav__arrow">+</span></button>
+            <ul class="mobile-nav__sub">
+              <li><a href="company.html#philosophy">企業理念</a></li>
+              <li><a href="company.html#overview">会社概要</a></li>
+              <li><a href="company.html#history">沿革</a></li>
+              <li><a href="company.html#group">グループ企業</a></li>
+              <li><a href="company.html#ir">IR情報</a></li>
+              <li><a href="company.html#recruit">採用情報</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#whatsnew" class="mobile-nav__link">ニュース</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="p-top-hero">
+      <!-- Opening splash -->
+      <div class="p-top-hero__opening" id="opening">
+        <div class="p-top-hero__opening-logo">
+          <svg viewBox="0 0 300 50">
+            <text x="50%" y="35" text-anchor="middle" class="logo-text-large">SUNTORY</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Video background slides -->
+      <div class="p-top-hero__movieSlide">
+        <div class="slide__group js-hero-slides">
+          <div class="slide__item is-active" style="background: linear-gradient(135deg, #0077b6 0%, #00b4d8 50%, #90e0ef 100%);">
+            <div class="slide__overlay"></div>
+          </div>
+          <div class="slide__item" style="background: linear-gradient(135deg, #2d6a4f 0%, #52b788 50%, #b7e4c7 100%);">
+            <div class="slide__overlay"></div>
+          </div>
+          <div class="slide__item" style="background: linear-gradient(135deg, #7b2cbf 0%, #c77dff 50%, #e0aaff 100%);">
+            <div class="slide__overlay"></div>
+          </div>
+          <div class="slide__item" style="background: linear-gradient(135deg, #e76f51 0%, #f4a261 50%, #e9c46a 100%);">
+            <div class="slide__overlay"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating product images -->
+      <div class="p-top-hero__goods">
+        <div class="p-top-hero__goods-item" style="--delay: 0s; --x: 5%; --y: 18%;">
+          <div class="product-placeholder" data-label="山崎">
+            <div class="hero-bottle whisky-bottle"></div>
+          </div>
+        </div>
+        <div class="p-top-hero__goods-item" style="--delay: 0.15s; --x: 18%; --y: 55%;">
+          <div class="product-placeholder" data-label="白州">
+            <div class="hero-bottle whisky-bottle green"></div>
+          </div>
+        </div>
+        <div class="p-top-hero__goods-item" style="--delay: 0.3s; --x: 32%; --y: 22%;">
+          <div class="product-placeholder" data-label="響">
+            <div class="hero-bottle whisky-bottle gold"></div>
+          </div>
+        </div>
+        <div class="p-top-hero__goods-item" style="--delay: 0.4s; --x: 45%; --y: 60%;">
+          <div class="product-placeholder" data-label="角瓶">
+            <div class="hero-bottle kaku-bottle"></div>
+          </div>
+        </div>
+        <div class="p-top-hero__goods-item" style="--delay: 0.5s; --x: 58%; --y: 15%;">
+          <div class="product-placeholder" data-label="プレモル">
+            <div class="hero-bottle beer-can"></div>
+          </div>
+        </div>
+        <div class="p-top-hero__goods-item" style="--delay: 0.6s; --x: 70%; --y: 50%;">
+          <div class="product-placeholder" data-label="翠 SUI">
+            <div class="hero-bottle gin-bottle"></div>
+          </div>
+        </div>
+        <div class="p-top-hero__goods-item" style="--delay: 0.7s; --x: 82%; --y: 20%;">
+          <div class="product-placeholder" data-label="ほろよい">
+            <div class="hero-bottle horoyoi-can"></div>
+          </div>
+        </div>
+        <div class="p-top-hero__goods-item" style="--delay: 0.8s; --x: 92%; --y: 55%;">
+          <div class="product-placeholder" data-label="-196">
+            <div class="hero-bottle chuhai-can"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- News ticker -->
+      <div class="p-top-hero__info">
+        <a href="#">
+          <span class="info__date">2026.03.26</span>
+          <span class="info__text">2026年10月「金麦」ビール化決定。サントリーのビール事業が新たなステージへ</span>
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#purpose" class="p-top-hero__scroll">
+        <span>SCROLL</span>
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path d="M12 16l-6-6h12z" fill="currentColor"/>
+        </svg>
+      </a>
+
+      <!-- Video control -->
+      <button class="p-top-hero__control" id="heroControl">
+        <span class="control__pause">PAUSE</span>
+        <span class="control__play" style="display:none;">PLAY</span>
+      </button>
+    </section>
+
+    <!-- ========== PURPOSE SECTION ========== -->
+    <section id="purpose" class="p-top-purpose js-scroll-animate">
+      <div class="p-top-purpose__bg">
+        <div class="purpose-illustration"></div>
+      </div>
+      <div class="p-top-purpose__content">
+        <h2 class="p-top-purpose__title">
+          <span class="purpose-line" data-delay="0">水と</span>
+          <span class="purpose-line" data-delay="200">生きる</span>
+        </h2>
+        <p class="p-top-purpose__text">
+          人と自然と響きあい、<br>
+          豊かな生活文化を創造し、<br>
+          社会との共生を実現する。
+        </p>
+        <a href="#" class="l-btn">
+          <span class="l-btn__inner">企業理念について</span>
+          <span class="l-btn__arw">
+            <svg viewBox="0 0 24 24" width="16" height="16">
+              <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== PROJECT SECTION ========== -->
+    <section id="project" class="p-top-project js-scroll-animate">
+      <div class="p-top-project__inner">
+        <div class="p-top-project__title-area">
+          <h2 class="p-top-project__vertical-title">やってみなはれ</h2>
+        </div>
+        <div class="p-top-project__content">
+          <p class="p-top-project__lead">
+            挑戦と革新の精神で、<br>
+            新しい価値を創造し続ける。<br>
+            私たちの情熱は、ここから始まる。
+          </p>
+          <div class="p-top-project__items">
+            <a href="#" class="project-card">
+              <div class="project-card__img">
+                <div class="placeholder-img" style="background: #e8f4f8;">サステナビリティ</div>
+              </div>
+              <p class="project-card__title">水のサステナビリティ</p>
+            </a>
+            <a href="#" class="project-card">
+              <div class="project-card__img">
+                <div class="placeholder-img" style="background: #f0e8f4;">次世代育成</div>
+              </div>
+              <p class="project-card__title">次世代育成プロジェクト</p>
+            </a>
+            <a href="#" class="project-card">
+              <div class="project-card__img">
+                <div class="placeholder-img" style="background: #f4f0e8;">地域共創</div>
+              </div>
+              <p class="project-card__title">地域との共創活動</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SPECIAL BANNER ========== -->
+    <section id="special" class="p-top-special">
+      <a href="#" class="p-top-special__link">
+        <div class="p-top-special__banner">
+          <div class="special-banner-content">
+            <h3>SPECIAL CONTENTS</h3>
+            <p>ものづくりへのこだわり — 匠の技と革新の融合</p>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ========== FEATURED PRODUCTS (今週のおすすめ) ========== -->
+    <section id="featured" class="p-top-featured">
+      <div class="section__inner">
+        <h2 class="p-top-ttl">今週のおすすめ商品</h2>
+        <div class="p-top-featured__grid">
+          <a href="#" class="featured-card">
+            <div class="featured-card__img">
+              <div class="placeholder-img placeholder-product" style="background: linear-gradient(135deg, #f5e6d0, #e8d0b0);">
+                <div class="bottle-shape" style="background: linear-gradient(180deg, #8B6914, #C49A2A);"></div>
+              </div>
+            </div>
+            <p class="featured-card__name">山崎</p>
+            <p class="featured-card__desc">シングルモルトウイスキー</p>
+          </a>
+          <a href="#" class="featured-card">
+            <div class="featured-card__img">
+              <div class="placeholder-img placeholder-product" style="background: linear-gradient(135deg, #e8f0e0, #d0e0c0);">
+                <div class="bottle-shape" style="background: linear-gradient(180deg, #2E7D32, #4CAF50);"></div>
+              </div>
+            </div>
+            <p class="featured-card__name">白州</p>
+            <p class="featured-card__desc">シングルモルトウイスキー</p>
+          </a>
+          <a href="#" class="featured-card">
+            <div class="featured-card__img">
+              <div class="placeholder-img placeholder-product" style="background: linear-gradient(135deg, #fff8e8, #f5ecd0);">
+                <div class="bottle-shape" style="background: linear-gradient(180deg, #B8860B, #DAA520);"></div>
+              </div>
+            </div>
+            <p class="featured-card__name">響</p>
+            <p class="featured-card__desc">ブレンデッドウイスキー</p>
+          </a>
+          <a href="#" class="featured-card">
+            <div class="featured-card__img">
+              <div class="placeholder-img placeholder-product" style="background: linear-gradient(135deg, #e0f2f1, #b2dfdb);">
+                <div class="bottle-shape" style="background: linear-gradient(180deg, #00695c, #26a69a);"></div>
+              </div>
+            </div>
+            <p class="featured-card__name">翠 SUI</p>
+            <p class="featured-card__desc">ジャパニーズジン</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ALCOHOL CATEGORY SECTION ========== -->
+    <section id="alcohol-category" class="p-top-alcohol">
+      <div class="section__inner">
+        <h2 class="p-top-ttl">サントリーのお酒</h2>
+        <div class="alcohol-tabs">
+          <button class="alcohol-tab is-active" data-tab="whisky">ウイスキー</button>
+          <button class="alcohol-tab" data-tab="beer">ビール</button>
+          <button class="alcohol-tab" data-tab="rtd">チューハイ・RTD</button>
+          <button class="alcohol-tab" data-tab="wine">ワイン</button>
+          <button class="alcohol-tab" data-tab="spirits">スピリッツ・焼酎</button>
+        </div>
+
+        <!-- Whisky Tab -->
+        <div class="alcohol-panel is-active" id="panel-whisky">
+          <div class="alcohol-grid">
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #f5e6d0, #e8d0b0);">
+                <div class="alcohol-bottle whisky-yamazaki"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">山崎</h4>
+                <span class="alcohol-card__type">シングルモルト</span>
+                <p class="alcohol-card__desc">日本初のモルトウイスキー蒸溜所で生まれた、華やかで奥深い味わい</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e8f0e0, #d0e0c0);">
+                <div class="alcohol-bottle whisky-hakushu"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">白州</h4>
+                <span class="alcohol-card__type">シングルモルト</span>
+                <p class="alcohol-card__desc">南アルプスの森の蒸溜所から。爽やかで軽快な味わい</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fff8e8, #f5ecd0);">
+                <div class="alcohol-bottle whisky-hibiki"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">響</h4>
+                <span class="alcohol-card__type">ブレンデッド</span>
+                <p class="alcohol-card__desc">サントリーブレンデッドの最高峰。複数原酒が織りなすハーモニー</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #f0ece0, #e5dfd0);">
+                <div class="alcohol-bottle whisky-chita"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">知多</h4>
+                <span class="alcohol-card__type">シングルグレーン</span>
+                <p class="alcohol-card__desc">とうもろこし原料の軽やかで甘い風味。ハイボールにも最適</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e8e4d8, #d8d0c0);">
+                <div class="alcohol-bottle whisky-ao"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">碧 Ao</h4>
+                <span class="alcohol-card__type">ワールドブレンデッド</span>
+                <p class="alcohol-card__desc">世界5大ウイスキー産地の原酒をブレンドした唯一無二の一本</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fff3d0, #f5e8b0);">
+                <div class="alcohol-bottle whisky-kaku"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">角瓶</h4>
+                <span class="alcohol-card__type">ブレンデッド</span>
+                <p class="alcohol-card__desc">ハイボールの定番。亀甲デザインのボトルで親しまれるロングセラー</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #f0e8e0, #e0d5c8);">
+                <div class="alcohol-bottle whisky-royal"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">ローヤル</h4>
+                <span class="alcohol-card__type">ブレンデッド</span>
+                <p class="alcohol-card__desc">漢字の「酉」をかたどった伝統的な高級ブレンデッドウイスキー</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #ede8e0, #ddd5c8);">
+                <div class="alcohol-bottle whisky-old"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">オールド</h4>
+                <span class="alcohol-card__type">ブレンデッド</span>
+                <p class="alcohol-card__desc">昭和から愛され続ける「だるまボトル」の愛称で知られる一本</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #f8f0e0, #ece0c8);">
+                <div class="alcohol-bottle whisky-torys"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">トリス</h4>
+                <span class="alcohol-card__type">ブレンデッド</span>
+                <p class="alcohol-card__desc">お手頃価格の入門向け。トリスハイボールで人気再燃</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Beer Tab -->
+        <div class="alcohol-panel" id="panel-beer">
+          <div class="alcohol-grid">
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fff8e1, #ffe082);">
+                <div class="alcohol-bottle beer-premol"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">ザ・プレミアム・モルツ</h4>
+                <span class="alcohol-card__type">ビール（プレミアム）</span>
+                <p class="alcohol-card__desc">麦芽100%のピルスナー。サントリービールの旗艦ブランド</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e3f2fd, #90caf9);">
+                <div class="alcohol-bottle beer-nama"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">サントリー生ビール</h4>
+                <span class="alcohol-card__type">ビール（スタンダード）</span>
+                <p class="alcohol-card__desc">毎日楽しめるスタンダードな生ビール</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e8f5e9, #a5d6a7);">
+                <div class="alcohol-bottle beer-psb"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">パーフェクトサントリービール</h4>
+                <span class="alcohol-card__type">ビール（機能系）</span>
+                <p class="alcohol-card__desc">糖質ゼロで本格ビールのおいしさを実現</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fff3e0, #ffcc02);">
+                <div class="alcohol-bottle beer-kinmugi"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">金麦</h4>
+                <span class="alcohol-card__type beer-new">2026年10月ビール化</span>
+                <p class="alcohol-card__desc">発売20年目のロングセラー。糖質75%オフも展開</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e0f7fa, #80deea);">
+                <div class="alcohol-bottle beer-allfree"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">オールフリー</h4>
+                <span class="alcohol-card__type">ノンアルコール</span>
+                <p class="alcohol-card__desc">カロリーゼロ・糖質ゼロのノンアルコールビールテイスト飲料</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- RTD Tab -->
+        <div class="alcohol-panel" id="panel-rtd">
+          <div class="alcohol-grid">
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e1f5fe, #4fc3f7);">
+                <div class="alcohol-bottle rtd-196"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">-196（イチキューロク）</h4>
+                <span class="alcohol-card__type">チューハイ</span>
+                <p class="alcohol-card__desc">-196&#176;C製法で果実まるごと浸漬。無糖シリーズが人気</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fffde7, #fff176);">
+                <div class="alcohol-bottle rtd-kodawari"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">こだわり酒場のレモンサワー</h4>
+                <span class="alcohol-card__type">レモンサワー</span>
+                <p class="alcohol-card__desc">居酒屋で飲むような本格的なレモンサワーの味わいを再現</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fce4ec, #f48fb1);">
+                <div class="alcohol-bottle rtd-horoyoi"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">ほろよい</h4>
+                <span class="alcohol-card__type">低アルコール 3%</span>
+                <p class="alcohol-card__desc">白いサワー、もも、グレープなど約20種以上のフレーバー</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #f3e5f5, #ce93d8);">
+                <div class="alcohol-bottle rtd-takohai"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">こだわり酒場のタコハイ</h4>
+                <span class="alcohol-card__type">チューハイ</span>
+                <p class="alcohol-card__desc">居酒屋定番のタコハイを自宅でも楽しめる缶チューハイ</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e8eaf6, #9fa8da);">
+                <div class="alcohol-bottle rtd-peel"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">THE PEEL</h4>
+                <span class="alcohol-card__type">レモンピールサワー</span>
+                <p class="alcohol-card__desc">レモンの皮の香りにこだわった新感覚サワー</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Wine Tab -->
+        <div class="alcohol-panel" id="panel-wine">
+          <div class="alcohol-grid">
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #f3e5f5, #e1bee7);">
+                <div class="alcohol-bottle wine-fromfarm"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">SUNTORY FROM FARM</h4>
+                <span class="alcohol-card__type">日本ワイン</span>
+                <p class="alcohol-card__desc">シンボル・ワイナリー・テロワール・品種の4シリーズで展開</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #ffebee, #ef9a9a);">
+                <div class="alcohol-bottle wine-akadama"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">赤玉スイートワイン</h4>
+                <span class="alcohol-card__type">甘口ワイン</span>
+                <p class="alcohol-card__desc">1907年発売。サントリーの原点ともいえるロングセラー</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fbe9e7, #ffab91);">
+                <div class="alcohol-bottle wine-delica"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">デリカメゾン</h4>
+                <span class="alcohol-card__type">国産カジュアルワイン</span>
+                <p class="alcohol-card__desc">毎日の食卓に寄り添う国産カジュアルワイン</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0);">
+                <div class="alcohol-bottle wine-carlo"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">カルロ ロッシ</h4>
+                <span class="alcohol-card__type">輸入ワイン</span>
+                <p class="alcohol-card__desc">カリフォルニア産のフルーティな味わいの輸入ワイン</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fff8e1, #ffecb3);">
+                <div class="alcohol-bottle wine-tavernello"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">タヴェルネッロ</h4>
+                <span class="alcohol-card__type">輸入ワイン</span>
+                <p class="alcohol-card__desc">イタリアNo.1ワインブランド。気軽に本場の味を</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Spirits Tab -->
+        <div class="alcohol-panel" id="panel-spirits">
+          <div class="alcohol-grid">
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e0f2f1, #80cbc4);">
+                <div class="alcohol-bottle spirits-sui"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">翠 SUI</h4>
+                <span class="alcohol-card__type">ジャパニーズジン</span>
+                <p class="alcohol-card__desc">柚子・緑茶・生姜を使用。ソーダ割りで人気の国産ジン</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e8eaf6, #9fa8da);">
+                <div class="alcohol-bottle spirits-roku"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">ROKU 六</h4>
+                <span class="alcohol-card__type">クラフトジン</span>
+                <p class="alcohol-card__desc">桜花・桜葉・煎茶・玉露・山椒・柚子の6つの和素材</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #e0f7fa, #80deea);">
+                <div class="alcohol-bottle spirits-kyogetsu"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">鏡月Green</h4>
+                <span class="alcohol-card__type">甲類焼酎</span>
+                <p class="alcohol-card__desc">韓国・雪岳山系の銘水で仕上げた軽やかな飲み心地の焼酎</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fff3e0, #ffcc80);">
+                <div class="alcohol-bottle spirits-osumi"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">大隅 OSUMI</h4>
+                <span class="alcohol-card__type">本格芋焼酎</span>
+                <p class="alcohol-card__desc">「香り厳選蒸溜」による豊かな香りが特長の本格焼酎</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #efebe9, #bcaaa4);">
+                <div class="alcohol-bottle spirits-brandy"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">サントリーブランデー V.O</h4>
+                <span class="alcohol-card__type">ブランデー</span>
+                <p class="alcohol-card__desc">果実酒づくりにも最適な定番ブランデー</p>
+              </div>
+            </a>
+            <a href="#" class="alcohol-card">
+              <div class="alcohol-card__img" style="background: linear-gradient(135deg, #fff8e1, #ffe082);">
+                <div class="alcohol-bottle spirits-umeshu"></div>
+              </div>
+              <div class="alcohol-card__body">
+                <h4 class="alcohol-card__name">山崎蒸溜所貯蔵 梅酒</h4>
+                <span class="alcohol-card__type">梅酒</span>
+                <p class="alcohol-card__desc">ウイスキー樽で長期熟成した本格梅酒ブレンド</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-top-alcohol__btn">
+          <a href="#" class="l-btn">
+            <span class="l-btn__inner">商品一覧をみる</span>
+            <span class="l-btn__arw">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRODUCT CAROUSEL ========== -->
+    <section id="product" class="p-top-product">
+      <div class="section__inner">
+        <h2 class="p-top-ttl">商品情報</h2>
+        <div class="p-top-product__carousel">
+          <div class="product-scroll js-product-scroll">
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #f5e6d0, #e8d0b0);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #8B6914, #C49A2A);"></div>
+              </div>
+              <span>山崎</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #e8f0e0, #d0e0c0);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #2E7D32, #4CAF50);"></div>
+              </div>
+              <span>白州</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #fff8e8, #f5ecd0);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #B8860B, #DAA520);"></div>
+              </div>
+              <span>響</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #fff3d0, #f5e8b0);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #D4A017, #E8C547);"></div>
+              </div>
+              <span>角瓶</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #fff8e1, #ffe082);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #C49000, #E0A800);"></div>
+              </div>
+              <span>プレモル</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #fff3e0, #ffcc02);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #B8860B, #DAA520);"></div>
+              </div>
+              <span>金麦</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #e0f2f1, #80cbc4);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #00695c, #26a69a);"></div>
+              </div>
+              <span>翠 SUI</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #e1f5fe, #4fc3f7);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #0277bd, #039be5);"></div>
+              </div>
+              <span>-196</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #fce4ec, #f48fb1);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #c2185b, #e91e63);"></div>
+              </div>
+              <span>ほろよい</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #f3e5f5, #ce93d8);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #6a1b9a, #9c27b0);"></div>
+              </div>
+              <span>ROKU 六</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #ffebee, #ef9a9a);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #b71c1c, #e53935);"></div>
+              </div>
+              <span>赤玉</span>
+            </div>
+            <div class="product-scroll__item">
+              <div class="placeholder-img placeholder-product-sm" style="background: linear-gradient(135deg, #e0f7fa, #80deea);">
+                <div class="bottle-shape-sm" style="background: linear-gradient(180deg, #00838f, #00acc1);"></div>
+              </div>
+              <span>鏡月</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-top-product__btn">
+          <a href="#" class="l-btn">
+            <span class="l-btn__inner">商品一覧をみる</span>
+            <span class="l-btn__arw">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CAMPAIGNS ========== -->
+    <section id="campaigns" class="p-top-campaigns">
+      <div class="p-top-campaigns__bg"></div>
+      <div class="section__inner">
+        <h2 class="p-top-ttl white">キャンペーン</h2>
+        <div class="swiper campaign-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="campaign-card">
+                <div class="campaign-card__img">
+                  <div class="placeholder-img" style="background: linear-gradient(135deg, #1a1a2e, #16213e); color:#DAA520;">
+                    <span style="color:#DAA520; font-size:1.1rem; font-weight:700;">山崎・白州・響</span>
+                  </div>
+                </div>
+                <div class="campaign-card__body">
+                  <p class="campaign-card__date">2026.03.01 - 2026.04.30</p>
+                  <p class="campaign-card__title">ジャパニーズウイスキーの世界を巡る旅 プレゼントキャンペーン</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="campaign-card">
+                <div class="campaign-card__img">
+                  <div class="placeholder-img" style="background: linear-gradient(135deg, #fff8e1, #ffe082);">
+                    <span style="color:#5d4037; font-size:1.1rem; font-weight:700;">角ハイボール</span>
+                  </div>
+                </div>
+                <div class="campaign-card__body">
+                  <p class="campaign-card__date">2026.03.15 - 2026.05.31</p>
+                  <p class="campaign-card__title">角ハイボールで乾杯！春のBBQキャンペーン 抽選でグリルセットが当たる</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="campaign-card">
+                <div class="campaign-card__img">
+                  <div class="placeholder-img" style="background: linear-gradient(135deg, #e0f2f1, #26a69a);">
+                    <span style="color:#fff; font-size:1.1rem; font-weight:700;">翠ジンソーダ</span>
+                  </div>
+                </div>
+                <div class="campaign-card__body">
+                  <p class="campaign-card__date">2026.03.20 - 2026.04.30</p>
+                  <p class="campaign-card__title">翠ジンソーダで楽しむ新生活！SNS投稿でオリジナルグラスをプレゼント</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="campaign-card">
+                <div class="campaign-card__img">
+                  <div class="placeholder-img" style="background: linear-gradient(135deg, #fce4ec, #f48fb1);">
+                    <span style="color:#fff; font-size:1.1rem; font-weight:700;">ほろよい</span>
+                  </div>
+                </div>
+                <div class="campaign-card__body">
+                  <p class="campaign-card__date">2026.04.01 - 2026.04.30</p>
+                  <p class="campaign-card__title">ほろよい春の限定フレーバー「桜もち」発売記念 お花見セットが当たる</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="campaign-card">
+                <div class="campaign-card__img">
+                  <div class="placeholder-img" style="background: linear-gradient(135deg, #fff8e1, #ffcc02);">
+                    <span style="color:#5d4037; font-size:1.1rem; font-weight:700;">金麦</span>
+                  </div>
+                </div>
+                <div class="campaign-card__body">
+                  <p class="campaign-card__date">2026.03.01 - 2026.06.30</p>
+                  <p class="campaign-card__title">金麦ビール化記念！20年の感謝を込めて 絶対もらえるキャンペーン</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="p-top-campaigns__btn">
+          <a href="#" class="l-btn l-btn--white">
+            <span class="l-btn__inner">キャンペーン一覧</span>
+            <span class="l-btn__arw">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 知る・楽しむ ========== -->
+    <section id="shiru" class="p-top-shiru">
+      <div class="section__inner">
+        <h2 class="p-top-ttl">知る・楽しむ</h2>
+        <p class="p-top-shiru__lead">お酒のある暮らしをもっと豊かに。飲み方のコツや蒸溜所の魅力をご紹介します。</p>
+        <div class="shiru-grid">
+          <!-- 蒸溜所・工場見学 -->
+          <a href="#" class="shiru-card shiru-card--large">
+            <div class="shiru-card__img" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d3a4a 100%);">
+              <div class="shiru-card__icon">
+                <svg viewBox="0 0 64 64" width="48" height="48">
+                  <rect x="8" y="28" width="48" height="28" rx="2" fill="none" stroke="rgba(218,165,32,0.6)" stroke-width="2"/>
+                  <rect x="20" y="8" width="8" height="20" rx="1" fill="none" stroke="rgba(218,165,32,0.6)" stroke-width="2"/>
+                  <rect x="36" y="14" width="8" height="14" rx="1" fill="none" stroke="rgba(218,165,32,0.6)" stroke-width="2"/>
+                  <line x1="24" y1="2" x2="24" y2="8" stroke="rgba(218,165,32,0.4)" stroke-width="1.5"/>
+                  <line x1="40" y1="8" x2="40" y2="14" stroke="rgba(218,165,32,0.4)" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <span class="shiru-card__label">DISTILLERY TOUR</span>
+            </div>
+            <div class="shiru-card__body">
+              <h3 class="shiru-card__title">蒸溜所・工場見学</h3>
+              <p class="shiru-card__desc">山崎蒸溜所、白州蒸溜所、天然水の森など、ものづくりの現場を体感できるツアー</p>
+              <ul class="shiru-card__tags">
+                <li>山崎蒸溜所</li>
+                <li>白州蒸溜所</li>
+                <li>ワイナリー</li>
+                <li>天然水工場</li>
+              </ul>
+            </div>
+          </a>
+          <!-- ウイスキーの愉しみ方 -->
+          <a href="#" class="shiru-card">
+            <div class="shiru-card__img" style="background: linear-gradient(135deg, #3e2723, #5d4037);">
+              <div class="shiru-card__icon">
+                <svg viewBox="0 0 64 64" width="40" height="40">
+                  <path d="M20 16 L16 48 L48 48 L44 16 Z" fill="none" stroke="rgba(218,165,32,0.6)" stroke-width="2"/>
+                  <line x1="22" y1="36" x2="42" y2="36" stroke="rgba(218,165,32,0.4)" stroke-width="1.5"/>
+                  <circle cx="32" cy="10" r="4" fill="none" stroke="rgba(218,165,32,0.4)" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="shiru-card__body">
+              <h3 class="shiru-card__title">ウイスキーの愉しみ方</h3>
+              <p class="shiru-card__desc">ハイボール、ロック、水割り。シーンに合った愉しみ方をプロがガイド</p>
+            </div>
+          </a>
+          <!-- ビールのおいしい注ぎ方 -->
+          <a href="#" class="shiru-card">
+            <div class="shiru-card__img" style="background: linear-gradient(135deg, #e65100, #ff9800);">
+              <div class="shiru-card__icon">
+                <svg viewBox="0 0 64 64" width="40" height="40">
+                  <rect x="18" y="16" width="28" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                  <path d="M46 26 L54 26 L54 40 L46 40" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+                  <ellipse cx="32" cy="22" rx="10" ry="4" fill="rgba(255,255,255,0.15)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="shiru-card__body">
+              <h3 class="shiru-card__title">ビールのおいしい注ぎ方</h3>
+              <p class="shiru-card__desc">三度注ぎでクリーミーな泡を。プレモルを最大限に味わうコツ</p>
+            </div>
+          </a>
+          <!-- カクテルレシピ -->
+          <a href="#" class="shiru-card">
+            <div class="shiru-card__img" style="background: linear-gradient(135deg, #00695c, #26a69a);">
+              <div class="shiru-card__icon">
+                <svg viewBox="0 0 64 64" width="40" height="40">
+                  <path d="M16 12 L32 36 L32 52" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                  <path d="M48 12 L32 36" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                  <line x1="16" y1="12" x2="48" y2="12" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                  <line x1="22" y1="52" x2="42" y2="52" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                  <line x1="20" y1="22" x2="44" y2="22" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="shiru-card__body">
+              <h3 class="shiru-card__title">カクテル・おつまみレシピ</h3>
+              <p class="shiru-card__desc">翠ジンソーダのアレンジや、お酒に合うおつまみレシピを多数掲載</p>
+            </div>
+          </a>
+          <!-- ワインと食 -->
+          <a href="#" class="shiru-card">
+            <div class="shiru-card__img" style="background: linear-gradient(135deg, #4a148c, #7b1fa2);">
+              <div class="shiru-card__icon">
+                <svg viewBox="0 0 64 64" width="40" height="40">
+                  <path d="M32 8 C32 8 22 20 22 28 C22 34 26 38 32 38 C38 38 42 34 42 28 C42 20 32 8 32 8Z" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                  <line x1="32" y1="38" x2="32" y2="52" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                  <line x1="24" y1="52" x2="40" y2="52" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="shiru-card__body">
+              <h3 class="shiru-card__title">ワインと食のマリアージュ</h3>
+              <p class="shiru-card__desc">料理との組み合わせで広がるワインの世界をソムリエが解説</p>
+            </div>
+          </a>
+          <!-- CM・動画 -->
+          <a href="#" class="shiru-card">
+            <div class="shiru-card__img" style="background: linear-gradient(135deg, #263238, #455a64);">
+              <div class="shiru-card__icon">
+                <svg viewBox="0 0 64 64" width="40" height="40">
+                  <rect x="8" y="14" width="48" height="36" rx="3" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                  <polygon points="26,24 26,42 42,33" fill="rgba(255,255,255,0.4)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="shiru-card__body">
+              <h3 class="shiru-card__title">CM・動画ギャラリー</h3>
+              <p class="shiru-card__desc">最新のテレビCMやブランドムービーをまとめてチェック</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 文化・スポーツ ========== -->
+    <section id="culture" class="p-top-culture">
+      <div class="section__inner">
+        <h2 class="p-top-ttl">文化・スポーツ</h2>
+        <p class="p-top-culture__lead">「人と自然と響きあう」を企業理念に、音楽・美術・学術・スポーツを通じて社会と文化の発展に貢献しています。</p>
+        <div class="culture-grid">
+          <!-- 音楽・芸術 -->
+          <div class="culture-category">
+            <h3 class="culture-category__heading">
+              <span class="culture-category__icon" style="background: #B8860B;">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" fill="#fff"/></svg>
+              </span>
+              音楽・芸術
+            </h3>
+            <div class="culture-cards">
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #1a1a2e, #2c2c54);">
+                  <span class="culture-card__icon-text">HALL</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>サントリーホール</h4>
+                  <p>「世界一美しい響き」を目指し1986年に開館。クラシック音楽の殿堂</p>
+                </div>
+              </a>
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #1b5e20, #2e7d32);">
+                  <span class="culture-card__icon-text">ART</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>サントリー美術館</h4>
+                  <p>「生活の中の美」をテーマに日本美術を中心とした企画展を開催</p>
+                </div>
+              </a>
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #4a148c, #6a1b9a);">
+                  <span class="culture-card__icon-text">FUND</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>サントリー芸術財団</h4>
+                  <p>音楽事業と美術事業を通じて芸術文化の振興に寄与</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- 学術・社会 -->
+          <div class="culture-category">
+            <h3 class="culture-category__heading">
+              <span class="culture-category__icon" style="background: #1565C0;">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill="#fff"/></svg>
+              </span>
+              学術・社会
+            </h3>
+            <div class="culture-cards">
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #0d47a1, #1565c0);">
+                  <span class="culture-card__icon-text">文化</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>サントリー文化財団</h4>
+                  <p>人文科学・社会科学の学際的研究を支援し、日本の知的活動に貢献</p>
+                </div>
+              </a>
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #283593, #3949ab);">
+                  <span class="culture-card__icon-text">学芸</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>サントリー学芸賞</h4>
+                  <p>社会・風俗、芸術・文学、政治・経済、思想・歴史の4部門で優れた著作を顕彰</p>
+                </div>
+              </a>
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #00695c, #00897b);">
+                  <span class="culture-card__icon-text">地域</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>地域文化賞</h4>
+                  <p>全国各地の個性ある地域文化活動を顕彰し、地域の活性化を応援</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- スポーツ -->
+          <div class="culture-category">
+            <h3 class="culture-category__heading">
+              <span class="culture-category__icon" style="background: #c62828;">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15.04 3.44c-.25.1-.51.15-.78.15-1.15 0-2.08-.93-2.08-2.08 0-.27.05-.53.15-.78C10.5 1.09 9.23 2.4 9.23 4c0 1.73 1.4 3.13 3.13 3.13 1.6 0 2.91-1.27 3.27-2.91-.25.1-.51.15-.78.15-.28 0-.54-.05-.78-.15z" fill="#fff"/><path d="M12 22c3.97 0 6-1.5 6-4.5 0-2.5-2-4.5-3.5-6.5l-.5-.5c-.5.5-1 1-1.5 1.5l-.5-.5c.5-.5 1-1 1.5-1.5-.5-.5-1-1-1.5-1.5C10 10.5 6 13 6 17.5 6 20.5 8.03 22 12 22z" fill="#fff"/></svg>
+              </span>
+              スポーツ
+            </h3>
+            <div class="culture-cards">
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #b71c1c, #d32f2f);">
+                  <span class="culture-card__icon-text">RUGBY</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>東京サントリーサンゴリアス</h4>
+                  <p>ジャパンラグビーリーグワンで活躍するサントリーのラグビーチーム</p>
+                </div>
+              </a>
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #e65100, #f57c00);">
+                  <span class="culture-card__icon-text">VOLLEY</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>サントリーサンバーズ大阪</h4>
+                  <p>V.LEAGUE DIVISION1で戦うサントリーのバレーボールチーム</p>
+                </div>
+              </a>
+              <a href="#" class="culture-card">
+                <div class="culture-card__img" style="background: linear-gradient(135deg, #1565c0, #1e88e5);">
+                  <span class="culture-card__icon-text">SPONSOR</span>
+                </div>
+                <div class="culture-card__body">
+                  <h4>スポーツスポンサーシップ</h4>
+                  <p>ゴルフ、テニス、マラソンなど多彩なスポーツイベントを支援</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== サステナビリティ ========== -->
+    <section id="sustainability" class="p-top-sustainability">
+      <div class="p-top-sustainability__hero">
+        <div class="sustainability-hero__bg"></div>
+        <div class="sustainability-hero__content">
+          <h2 class="sustainability-hero__title">水と生きる、<br>未来のために。</h2>
+          <p class="sustainability-hero__subtitle">SUNTORY Sustainability</p>
+        </div>
+      </div>
+      <div class="section__inner">
+        <div class="sustainability-pillars">
+          <!-- 水 -->
+          <a href="#" class="sustainability-pillar">
+            <div class="sustainability-pillar__icon" style="background: linear-gradient(135deg, #0277BD, #4FC3F7);">
+              <svg viewBox="0 0 48 48" width="36" height="36">
+                <path d="M24 4 C24 4 10 20 10 30 C10 38 16 44 24 44 C32 44 38 38 38 30 C38 20 24 4 24 4Z" fill="none" stroke="#fff" stroke-width="2.5"/>
+                <path d="M18 32 Q24 28 30 32" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                <path d="M16 36 Q24 32 32 36" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="sustainability-pillar__title">水</h3>
+            <ul class="sustainability-pillar__list">
+              <li>水理念 — 「水と生きる」の原点</li>
+              <li>天然水の森 — 全国21か所以上の水源涵養活動</li>
+              <li>水育（みずいく） — 次世代への水の大切さを伝える教育</li>
+            </ul>
+          </a>
+          <!-- 環境 -->
+          <a href="#" class="sustainability-pillar">
+            <div class="sustainability-pillar__icon" style="background: linear-gradient(135deg, #2E7D32, #66BB6A);">
+              <svg viewBox="0 0 48 48" width="36" height="36">
+                <circle cx="24" cy="24" r="18" fill="none" stroke="#fff" stroke-width="2.5"/>
+                <path d="M12 28 Q18 18 24 22 Q30 26 36 16" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                <path d="M24 6 L24 14 M24 34 L24 42 M6 24 L14 24 M34 24 L42 24" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="sustainability-pillar__title">環境</h3>
+            <ul class="sustainability-pillar__list">
+              <li>環境ビジョン2050 — 温室効果ガス排出量実質ゼロ</li>
+              <li>気候変動対応 — RE100加盟と再生可能エネルギー推進</li>
+              <li>プラスチック戦略 — 2030年までにペットボトルの100%サステナブル化</li>
+              <li>容器・包装 — 軽量化とリサイクル素材の活用</li>
+            </ul>
+          </a>
+          <!-- 社会 -->
+          <a href="#" class="sustainability-pillar">
+            <div class="sustainability-pillar__icon" style="background: linear-gradient(135deg, #F57F17, #FFB74D);">
+              <svg viewBox="0 0 48 48" width="36" height="36">
+                <circle cx="18" cy="16" r="6" fill="none" stroke="#fff" stroke-width="2.5"/>
+                <circle cx="34" cy="16" r="4" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                <path d="M6 40 C6 32 12 28 18 28 C24 28 30 32 30 40" fill="none" stroke="#fff" stroke-width="2.5"/>
+                <path d="M30 38 C30 32 34 30 38 30 C42 30 44 32 44 38" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="sustainability-pillar__title">社会</h3>
+            <ul class="sustainability-pillar__list">
+              <li>責任ある飲酒 — 適正飲酒の啓発と飲酒運転ゼロ</li>
+              <li>健康経営 — 従業員の健康とウェルビーイングの推進</li>
+              <li>ダイバーシティ — 多様な人材が活躍できる組織づくり</li>
+              <li>人権 — サプライチェーン全体での人権尊重</li>
+            </ul>
+          </a>
+        </div>
+        <div class="sustainability-stats">
+          <div class="sustainability-stat">
+            <span class="sustainability-stat__number">21+</span>
+            <span class="sustainability-stat__label">天然水の森（か所）</span>
+          </div>
+          <div class="sustainability-stat">
+            <span class="sustainability-stat__number">12,000</span>
+            <span class="sustainability-stat__label">水源涵養面積（ha）</span>
+          </div>
+          <div class="sustainability-stat">
+            <span class="sustainability-stat__number">2050</span>
+            <span class="sustainability-stat__label">GHG排出実質ゼロ目標年</span>
+          </div>
+          <div class="sustainability-stat">
+            <span class="sustainability-stat__number">100%</span>
+            <span class="sustainability-stat__label">PETサステナブル化目標</span>
+          </div>
+        </div>
+        <div class="sustainability-btn">
+          <a href="#" class="l-btn">
+            <span class="l-btn__inner">サステナビリティの取り組みを見る</span>
+            <span class="l-btn__arw">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHAT'S NEW ========== -->
+    <section id="whatsnew" class="p-top-whatsnew">
+      <div class="section__inner">
+        <div class="news__inner">
+          <div class="news__side">
+            <h2 class="p-top-ttl">What's New</h2>
+          </div>
+          <div class="news__body">
+            <ul class="news__list">
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.25</span>
+                  <span class="news__category">商品</span>
+                  <span class="news__text">「-196無糖〈桃ヨーグリート〉」「〈マンゴーヨーグリート〉」期間限定新発売</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.20</span>
+                  <span class="news__category">企業</span>
+                  <span class="news__text">2026年10月「金麦」シリーズのビール化について</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.15</span>
+                  <span class="news__category">商品</span>
+                  <span class="news__text">「ザ・プレミアム・モルツ」発売20周年記念デザイン缶を数量限定発売</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.10</span>
+                  <span class="news__category">商品</span>
+                  <span class="news__text">ジャパニーズクラフトジン「ROKU 六」新CM公開のお知らせ</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.05</span>
+                  <span class="news__category">商品</span>
+                  <span class="news__text">「ほろよい」春の限定フレーバー「桜もちサワー」新発売</span>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="l-btn">
+              <span class="l-btn__inner">一覧をみる</span>
+              <span class="l-btn__arw">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWS RELEASE ========== -->
+    <section id="newsrelease" class="p-top-newsrelease">
+      <div class="section__inner">
+        <div class="news__inner">
+          <div class="news__side">
+            <h2 class="p-top-ttl">News Release</h2>
+          </div>
+          <div class="news__body">
+            <ul class="news__list">
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.26</span>
+                  <span class="news__text">2026年4月1日出荷分より酒類187品目の価格改定について</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.22</span>
+                  <span class="news__text">2026年サントリービール事業方針 — 主要4ブランド強化と金麦ビール化</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.18</span>
+                  <span class="news__text">「響」「山崎」など酒類187品の2〜20%価格改定のお知らせ</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="news__date">2026.03.12</span>
+                  <span class="news__text">パーフェクトサントリービール リニューアル発売のお知らせ</span>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="l-btn">
+              <span class="l-btn__inner">ニュースリリース一覧</span>
+              <span class="l-btn__arw">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <div class="p-top-pagetop" id="pageTop">
+      <a href="#hero">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path d="M12 8l-6 6h12z" fill="currentColor"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer" class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <svg viewBox="0 0 240 40">
+              <text x="0" y="30" class="logo-text" fill="#fff">SUNTORY</text>
+            </svg>
+            <p class="footer__tagline">水と生きる</p>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-col">
+              <h4>商品情報</h4>
+              <ul>
+                <li><a href="#">ウイスキー</a></li>
+                <li><a href="#">ビール・新ジャンル</a></li>
+                <li><a href="#">チューハイ・カクテル</a></li>
+                <li><a href="#">ワイン</a></li>
+                <li><a href="#">スピリッツ・リキュール</a></li>
+                <li><a href="#">焼酎・梅酒</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h4>企業情報</h4>
+              <ul>
+                <li><a href="#">会社概要</a></li>
+                <li><a href="#">企業理念</a></li>
+                <li><a href="#">IR情報</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h4>サステナビリティ</h4>
+              <ul>
+                <li><a href="#">環境への取り組み</a></li>
+                <li><a href="#">社会貢献活動</a></li>
+                <li><a href="#">ガバナンス</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h4>採用情報</h4>
+              <ul>
+                <li><a href="#">新卒採用</a></li>
+                <li><a href="#">キャリア採用</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <ul class="footer__links">
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">サイトマップ</a></li>
+          </ul>
+          <p class="footer__copyright">&copy; 2026 SUNTORY HOLDINGS LIMITED. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

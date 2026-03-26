@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>山崎 | サントリー</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo">
+          <svg class="header__logo-svg" viewBox="0 0 240 40">
+            <text x="0" y="30" class="logo-text">SUNTORY</text>
+          </svg>
+        </a>
+        <nav class="header__nav pc-only">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="../products.html">商品情報</a></li>
+            <li class="header__nav-item"><a href="../enjoy.html">知る・楽しむ</a></li>
+            <li class="header__nav-item"><a href="../culture.html">文化・スポーツ</a></li>
+            <li class="header__nav-item"><a href="../sustainability.html">サステナビリティ</a></li>
+            <li class="header__nav-item"><a href="../company.html">企業情報</a></li>
+          </ul>
+        </nav>
+        <button class="header__menu-btn sp-only" id="menuBtn" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="header__mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="../products.html" class="mobile-nav__link">商品情報</a></li>
+          <li><a href="../enjoy.html" class="mobile-nav__link">知る・楽しむ</a></li>
+          <li><a href="../culture.html" class="mobile-nav__link">文化・スポーツ</a></li>
+          <li><a href="../sustainability.html" class="mobile-nav__link">サステナビリティ</a></li>
+          <li><a href="../company.html" class="mobile-nav__link">企業情報</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <nav class="breadcrumb">
+      <div class="section__inner">
+        <ol class="breadcrumb__list">
+          <li><a href="../index.html">ホーム</a></li>
+          <li><a href="../products.html">商品情報</a></li>
+          <li><a href="../products.html#whisky">ウイスキー</a></li>
+          <li>山崎</li>
+        </ol>
+      </div>
+    </nav>
+
+    <section class="product-detail-hero">
+      <div class="product-detail-hero__bg" style="background: linear-gradient(135deg, #1a1008 0%, #3c2810 100%);"></div>
+      <div class="section__inner">
+        <div class="product-detail-hero__grid">
+          <div class="product-detail-hero__visual">
+            <svg viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="yamazakiBottle" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#c8922a"/>
+                  <stop offset="50%" stop-color="#a06e1a"/>
+                  <stop offset="100%" stop-color="#7a5210"/>
+                </linearGradient>
+                <linearGradient id="yamazakiLiquid" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#d4a030"/>
+                  <stop offset="100%" stop-color="#8a6010"/>
+                </linearGradient>
+                <linearGradient id="yamazakiCap" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#2a1a08"/>
+                  <stop offset="100%" stop-color="#1a0e04"/>
+                </linearGradient>
+              </defs>
+              <!-- Shadow -->
+              <ellipse cx="150" cy="480" rx="70" ry="12" fill="rgba(0,0,0,0.3)"/>
+              <!-- Bottle body -->
+              <rect x="95" y="180" width="110" height="290" rx="6" fill="url(#yamazakiBottle)"/>
+              <!-- Bottle neck -->
+              <rect x="130" y="60" width="40" height="120" rx="4" fill="url(#yamazakiBottle)"/>
+              <!-- Bottle shoulder -->
+              <path d="M95 200 Q95 180 130 170 L130 120 Q130 110 135 105 L135 60 L165 60 L165 105 Q170 110 170 120 L170 170 Q205 180 205 200 Z" fill="url(#yamazakiBottle)"/>
+              <!-- Cap -->
+              <rect x="128" y="30" width="44" height="35" rx="3" fill="url(#yamazakiCap)"/>
+              <rect x="132" y="28" width="36" height="6" rx="2" fill="#3a2a12"/>
+              <!-- Label background -->
+              <rect x="105" y="240" width="90" height="140" rx="3" fill="#f5eed8"/>
+              <!-- Label details -->
+              <rect x="112" y="248" width="76" height="2" fill="#c8922a"/>
+              <text x="150" y="275" text-anchor="middle" fill="#1a0e04" font-size="8" font-weight="bold">SUNTORY</text>
+              <text x="150" y="300" text-anchor="middle" fill="#8a6010" font-size="14" font-weight="bold" font-family="serif">山崎</text>
+              <text x="150" y="318" text-anchor="middle" fill="#1a0e04" font-size="6">YAMAZAKI</text>
+              <text x="150" y="332" text-anchor="middle" fill="#1a0e04" font-size="5">SINGLE MALT</text>
+              <text x="150" y="344" text-anchor="middle" fill="#1a0e04" font-size="5">JAPANESE WHISKY</text>
+              <line x1="120" y1="352" x2="180" y2="352" stroke="#c8922a" stroke-width="0.5"/>
+              <text x="150" y="368" text-anchor="middle" fill="#1a0e04" font-size="7">43%</text>
+              <rect x="112" y="372" width="76" height="2" fill="#c8922a"/>
+              <!-- Liquid level -->
+              <rect x="98" y="200" width="104" height="260" rx="4" fill="url(#yamazakiLiquid)" opacity="0.3"/>
+              <!-- Bottle shine -->
+              <rect x="100" y="185" width="15" height="275" rx="4" fill="rgba(255,255,255,0.1)"/>
+            </svg>
+          </div>
+          <div class="product-detail-hero__info">
+            <span class="product-detail-hero__category">シングルモルトウイスキー</span>
+            <h1 class="product-detail-hero__name">山崎</h1>
+            <p class="product-detail-hero__name-en">SUNTORY SINGLE MALT WHISKY YAMAZAKI</p>
+            <p class="product-detail-hero__desc">1923年、サントリー創業者 鳥井信治郎が日本初のモルトウイスキー蒸溜所を京都郊外の山崎の地に建設。天王山の麓、桂川・宇治川・木津川の三川が合流する水の里で、日本の自然と匠の技が生み出す、華やかで奥深いシングルモルトウイスキー。</p>
+            <div class="product-detail-hero__meta">
+              <div class="meta-item"><span class="meta-label">アルコール度数</span><span class="meta-value">43%</span></div>
+              <div class="meta-item"><span class="meta-label">容量</span><span class="meta-value">700ml</span></div>
+              <div class="meta-item"><span class="meta-label">種類</span><span class="meta-value">シングルモルトウイスキー</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-detail-section subpage-section" id="details">
+      <div class="section__inner">
+        <h2 class="subpage-section__heading">テイスティングノート</h2>
+        <div class="taste-grid">
+          <div class="taste-card">
+            <div class="taste-card__icon">
+              <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="20" r="10" fill="none" stroke="#c8922a" stroke-width="2"/><path d="M20 30 Q24 36 28 30" fill="none" stroke="#c8922a" stroke-width="2"/><line x1="24" y1="10" x2="24" y2="6" stroke="#c8922a" stroke-width="1.5"/><line x1="18" y1="12" x2="15" y2="9" stroke="#c8922a" stroke-width="1.5"/><line x1="30" y1="12" x2="33" y2="9" stroke="#c8922a" stroke-width="1.5"/></svg>
+            </div>
+            <h4>香り</h4>
+            <p>苺やさくらんぼのような華やかな果実香、バニラ、シナモンのような甘い香り</p>
+          </div>
+          <div class="taste-card">
+            <div class="taste-card__icon">
+              <svg viewBox="0 0 48 48" width="48" height="48"><ellipse cx="24" cy="24" rx="12" ry="8" fill="none" stroke="#c8922a" stroke-width="2"/><path d="M18 24 Q24 30 30 24" fill="none" stroke="#c8922a" stroke-width="1.5"/><circle cx="21" cy="22" r="1.5" fill="#c8922a"/><circle cx="27" cy="22" r="1.5" fill="#c8922a"/></svg>
+            </div>
+            <h4>味わい</h4>
+            <p>甘いバニラ、なめらかなオイリーさ、フルーティで芳醇な味わい</p>
+          </div>
+          <div class="taste-card">
+            <div class="taste-card__icon">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path d="M8 28 Q16 20 24 28 Q32 36 40 28" fill="none" stroke="#c8922a" stroke-width="2"/><path d="M8 22 Q16 14 24 22 Q32 30 40 22" fill="none" stroke="#c8922a" stroke-width="2"/></svg>
+            </div>
+            <h4>余韻</h4>
+            <p>甘く長い余韻、ミズナラ樽由来の伽羅のような東洋的な香り</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-detail-section subpage-section">
+      <div class="section__inner">
+        <h2 class="subpage-section__heading">おすすめの飲み方</h2>
+        <div class="drinking-grid">
+          <div class="drinking-card">
+            <div class="drinking-card__icon" style="background: linear-gradient(135deg, #3c2810, #1a1008);">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path d="M16 38 L20 18 L28 18 L32 38 Z" fill="none" stroke="#c8922a" stroke-width="2"/><line x1="14" y1="38" x2="34" y2="38" stroke="#c8922a" stroke-width="2"/><rect x="21" y="22" width="6" height="12" fill="#c8922a" opacity="0.3"/></svg>
+            </div>
+            <h4>ストレート</h4>
+            <p>常温でそのまま。山崎の華やかな香りと複雑な味わいをダイレクトに楽しめます。少量の加水で香りがさらに開きます。</p>
+          </div>
+          <div class="drinking-card">
+            <div class="drinking-card__icon" style="background: linear-gradient(135deg, #3c2810, #1a1008);">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path d="M14 36 L14 16 L34 16 L34 36 Z" fill="none" stroke="#c8922a" stroke-width="2" rx="2"/><rect x="18" y="20" width="6" height="6" fill="#c8922a" opacity="0.3" transform="rotate(15 21 23)"/><rect x="24" y="22" width="5" height="5" fill="#c8922a" opacity="0.3" transform="rotate(-10 26 24)"/></svg>
+            </div>
+            <h4>ロック</h4>
+            <p>大きめの氷を入れたグラスに注ぎ、ゆっくりと。温度変化とともに移り変わる味わいをお楽しみください。</p>
+          </div>
+          <div class="drinking-card">
+            <div class="drinking-card__icon" style="background: linear-gradient(135deg, #3c2810, #1a1008);">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path d="M16 38 L16 12 L32 12 L32 38 Z" fill="none" stroke="#c8922a" stroke-width="2" rx="2"/><line x1="16" y1="24" x2="32" y2="24" stroke="#c8922a" stroke-width="1" stroke-dasharray="2"/><rect x="17" y="24" width="14" height="13" fill="#c8922a" opacity="0.15"/></svg>
+            </div>
+            <h4>水割り</h4>
+            <p>ウイスキー1に対して天然水2〜2.5。食中酒として和食との相性も抜群です。</p>
+          </div>
+          <div class="drinking-card">
+            <div class="drinking-card__icon" style="background: linear-gradient(135deg, #3c2810, #1a1008);">
+              <svg viewBox="0 0 48 48" width="48" height="48"><path d="M16 38 L16 10 L32 10 L32 38 Z" fill="none" stroke="#c8922a" stroke-width="2" rx="2"/><circle cx="22" cy="28" r="1" fill="#c8922a" opacity="0.5"/><circle cx="26" cy="24" r="1.5" fill="#c8922a" opacity="0.5"/><circle cx="24" cy="32" r="1" fill="#c8922a" opacity="0.5"/><circle cx="28" cy="30" r="0.8" fill="#c8922a" opacity="0.5"/></svg>
+            </div>
+            <h4>ハイボール</h4>
+            <p>ウイスキー1に対してソーダ3〜4。山崎の華やかな香りが炭酸とともに弾けます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-detail-section subpage-section">
+      <div class="section__inner">
+        <h2 class="subpage-section__heading">ラインナップ</h2>
+        <div class="detail-grid">
+          <div class="detail-card" style="background: linear-gradient(135deg, #1a1008, #3c2810);">
+            <div class="detail-card__img">
+              <svg viewBox="0 0 120 160"><rect x="40" y="20" width="40" height="130" rx="4" fill="#c8922a"/><rect x="50" y="5" width="20" height="20" rx="2" fill="#2a1a08"/><rect x="48" y="55" width="24" height="40" rx="2" fill="#f5eed8"/><text x="60" y="78" text-anchor="middle" fill="#1a0e04" font-size="6">山崎</text></svg>
+            </div>
+            <h4 class="detail-card__title">山崎</h4>
+            <p class="detail-card__text">ノンエイジ</p>
+          </div>
+          <div class="detail-card" style="background: linear-gradient(135deg, #1a1008, #3c2810);">
+            <div class="detail-card__img">
+              <svg viewBox="0 0 120 160"><rect x="40" y="20" width="40" height="130" rx="4" fill="#b8820a"/><rect x="50" y="5" width="20" height="20" rx="2" fill="#2a1a08"/><rect x="48" y="55" width="24" height="40" rx="2" fill="#f5eed8"/><text x="60" y="75" text-anchor="middle" fill="#1a0e04" font-size="6">山崎</text><text x="60" y="85" text-anchor="middle" fill="#8a6010" font-size="7" font-weight="bold">12</text></svg>
+            </div>
+            <h4 class="detail-card__title">山崎12年</h4>
+            <p class="detail-card__text">繊細で上品</p>
+          </div>
+          <div class="detail-card" style="background: linear-gradient(135deg, #1a1008, #3c2810);">
+            <div class="detail-card__img">
+              <svg viewBox="0 0 120 160"><rect x="40" y="20" width="40" height="130" rx="4" fill="#a07008"/><rect x="50" y="5" width="20" height="20" rx="2" fill="#2a1a08"/><rect x="48" y="55" width="24" height="40" rx="2" fill="#f5eed8"/><text x="60" y="75" text-anchor="middle" fill="#1a0e04" font-size="6">山崎</text><text x="60" y="85" text-anchor="middle" fill="#8a6010" font-size="7" font-weight="bold">18</text></svg>
+            </div>
+            <h4 class="detail-card__title">山崎18年</h4>
+            <p class="detail-card__text">フルボディで深遠</p>
+          </div>
+          <div class="detail-card" style="background: linear-gradient(135deg, #1a1008, #3c2810);">
+            <div class="detail-card__img">
+              <svg viewBox="0 0 120 160"><rect x="40" y="20" width="40" height="130" rx="4" fill="#886008"/><rect x="50" y="5" width="20" height="20" rx="2" fill="#2a1a08"/><rect x="48" y="55" width="24" height="40" rx="2" fill="#f5eed8"/><text x="60" y="75" text-anchor="middle" fill="#1a0e04" font-size="6">山崎</text><text x="60" y="85" text-anchor="middle" fill="#8a6010" font-size="7" font-weight="bold">25</text></svg>
+            </div>
+            <h4 class="detail-card__title">山崎25年</h4>
+            <p class="detail-card__text">究極の逸品</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-detail-section subpage-section">
+      <div class="section__inner">
+        <h2 class="subpage-section__heading">関連商品</h2>
+        <div class="detail-grid">
+          <a href="hakushu.html#details" class="detail-card" style="background: linear-gradient(135deg, #0c1a0c, #1a3a1a); text-decoration:none;">
+            <div class="detail-card__img">
+              <svg viewBox="0 0 120 160"><rect x="40" y="20" width="40" height="130" rx="4" fill="#4a8a4a"/><rect x="50" y="5" width="20" height="20" rx="2" fill="#1a3a1a"/><rect x="48" y="55" width="24" height="40" rx="2" fill="#f5eed8"/><text x="60" y="78" text-anchor="middle" fill="#1a0e04" font-size="6">白州</text></svg>
+            </div>
+            <h4 class="detail-card__title">白州</h4>
+            <p class="detail-card__text">シングルモルトウイスキー</p>
+          </a>
+          <a href="hibiki.html#details" class="detail-card" style="background: linear-gradient(135deg, #1a1508, #3c3018); text-decoration:none;">
+            <div class="detail-card__img">
+              <svg viewBox="0 0 120 160"><rect x="35" y="20" width="50" height="120" rx="8" fill="#c8a848"/><rect x="48" y="5" width="24" height="20" rx="4" fill="#3c3018"/><rect x="43" y="55" width="34" height="40" rx="2" fill="#f5eed8"/><text x="60" y="78" text-anchor="middle" fill="#1a0e04" font-size="6">響</text></svg>
+            </div>
+            <h4 class="detail-card__title">響</h4>
+            <p class="detail-card__text">ブレンデッドウイスキー</p>
+          </a>
+          <a href="kakubin.html#details" class="detail-card" style="background: linear-gradient(135deg, #1a1608, #3c3210); text-decoration:none;">
+            <div class="detail-card__img">
+              <svg viewBox="0 0 120 160"><rect x="38" y="20" width="44" height="130" rx="2" fill="#c8a830"/><rect x="50" y="5" width="20" height="20" rx="2" fill="#3c3210"/><rect x="46" y="55" width="28" height="40" rx="2" fill="#f5eed8"/><text x="60" y="78" text-anchor="middle" fill="#1a0e04" font-size="6">角瓶</text></svg>
+            </div>
+            <h4 class="detail-card__title">知多</h4>
+            <p class="detail-card__text">グレーンウイスキー</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <svg viewBox="0 0 240 40"><text x="0" y="30" class="logo-text" fill="#fff">SUNTORY</text></svg>
+            <p class="footer__tagline">水と生きる</p>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-col">
+              <h4>商品情報</h4>
+              <ul>
+                <li><a href="../products.html#whisky">ウイスキー</a></li>
+                <li><a href="../products.html#beer">ビール</a></li>
+                <li><a href="../products.html#rtd">チューハイ</a></li>
+                <li><a href="../products.html#wine">ワイン</a></li>
+                <li><a href="../products.html#spirits">スピリッツ</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h4>企業情報</h4>
+              <ul>
+                <li><a href="../company.html">会社概要</a></li>
+                <li><a href="../company.html#philosophy">企業理念</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h4>サステナビリティ</h4>
+              <ul>
+                <li><a href="../sustainability.html">環境への取り組み</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <ul class="footer__links">
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+          </ul>
+          <p class="footer__copyright">&copy; 2026 SUNTORY HOLDINGS LIMITED.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>
