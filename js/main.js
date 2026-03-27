@@ -12,7 +12,7 @@
 
   // Detect path depth relative to site root
   const path = window.location.pathname;
-  const depth = (path.match(/\/(products|enjoy)\//)) ? '../' : '';
+  const depth = (path.match(/\/(products|enjoy|culture|sustainability|company)\//)) ? '../' : '';
 
   header.innerHTML = `
     <div class="header__inner">
@@ -23,31 +23,94 @@
       </a>
       <nav class="header__nav pc-only">
         <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="${depth}products.html">商品情報</a>
+          <li class="header__nav-item has-mega has-mega--click">
+            <a href="${depth}products.html" class="js-mega-toggle">商品情報</a>
+            <div class="mega-menu mega-menu--full mega-menu--grid">
+              <div class="mega-grid-inner">
+                <div class="mega-grid__top">
+                  <a href="${depth}products.html" class="mega-grid__top-link">商品情報TOP<span class="mega-grid__arw">&rsaquo;</span></a>
+                </div>
+                <div class="mega-grid__featured-product">
+                  <a href="${depth}products/strongzero.html" class="mega-featured-product">
+                    <div class="mega-featured-product__visual">
+                      <img src="${depth}images/strongzero-can.png" alt="-196 ストロングゼロ ダブルレモン" width="200" height="260" style="object-fit:contain; border-radius:8px; filter:drop-shadow(0 8px 24px rgba(0,0,40,0.4));">
+                    </div>
+                    <div class="mega-featured-product__info">
+                      <span class="mega-featured-product__label">PICK UP</span>
+                      <h3 class="mega-featured-product__name">-196 ストロングゼロ</h3>
+                      <p class="mega-featured-product__desc">果実まるごとの浸漬酒と、クリアウォッカで仕上げた本格チューハイ。甘くない、だからウマい。</p>
+                      <span class="mega-featured-product__link">詳しく見る<span class="mega-grid__arw">&rsaquo;</span></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="mega-grid__sections">
+                  <div class="mega-grid__section mega-grid__section--full">
+                    <h4 class="mega-grid__heading">カテゴリ</h4>
+                    <div class="mega-category-list">
+                      <div class="mega-category">
+                        <button class="mega-category__toggle">ウイスキー<span class="mega-category__arrow">+</span></button>
+                        <div class="mega-category__products">
+                          <a href="${depth}products/yamazaki.html" class="mega-category__item">山崎</a>
+                          <a href="${depth}products/hakushu.html" class="mega-category__item">白州</a>
+                          <a href="${depth}products/hibiki.html" class="mega-category__item">響</a>
+                          <a href="${depth}products/kakubin.html" class="mega-category__item">角瓶</a>
+                          <a href="${depth}products/roku.html" class="mega-category__item">ROKU ジン</a>
+                        </div>
+                      </div>
+                      <div class="mega-category">
+                        <button class="mega-category__toggle">ビール・新ジャンル<span class="mega-category__arrow">+</span></button>
+                        <div class="mega-category__products">
+                          <a href="${depth}products/premiummalts.html" class="mega-category__item">ザ・プレミアム・モルツ</a>
+                          <a href="${depth}products/nama.html" class="mega-category__item">金麦ザ・ラガー</a>
+                          <a href="${depth}products/kinmugi.html" class="mega-category__item">金麦</a>
+                          <a href="${depth}products/psb.html" class="mega-category__item">パーフェクトサントリービール</a>
+                          <a href="${depth}products/allfree.html" class="mega-category__item">オールフリー</a>
+                        </div>
+                      </div>
+                      <div class="mega-category">
+                        <button class="mega-category__toggle">チューハイ・RTD<span class="mega-category__arrow">+</span></button>
+                        <div class="mega-category__products">
+                          <a href="${depth}products/strongzero.html" class="mega-category__item">-196 ストロングゼロ</a>
+                          <a href="${depth}products/minus196.html" class="mega-category__item">-196</a>
+                          <a href="${depth}products/horoyoi.html" class="mega-category__item">ほろよい</a>
+                          <a href="${depth}products/lemonsour.html" class="mega-category__item">こだわり酒場のレモンサワー</a>
+                          <a href="${depth}products/takohai.html" class="mega-category__item">タコハイ</a>
+                        </div>
+                      </div>
+                      <div class="mega-category">
+                        <button class="mega-category__toggle">ソフトドリンク<span class="mega-category__arrow">+</span></button>
+                        <div class="mega-category__products">
+                          <a href="${depth}products.html#softdrink" class="mega-category__item">サントリー天然水</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mega-grid__close">
+                  <button class="mega-grid__close-btn js-mega-close">&times; 閉じる</button>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="header__nav-item has-mega">
             <a href="${depth}enjoy.html">知る・楽しむ</a>
             <div class="mega-menu mega-menu--full mega-menu--grid">
               <div class="mega-grid-inner">
                 <div class="mega-grid__top">
-                  <a href="https://ssl1.suntory.co.jp/enjoy/?ke=mn" class="mega-grid__top-link" target="_blank" rel="noopener">知る・楽しむTOP<span class="mega-grid__arw">&rsaquo;</span></a>
+                  <a href="${depth}enjoy.html" class="mega-grid__top-link">知る・楽しむTOP<span class="mega-grid__arw">&rsaquo;</span></a>
                 </div>
                 <div class="mega-grid__sections">
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">キャンペーン</h4>
                     <div class="mega-grid__cards mega-grid__cards--single">
                       <a href="${depth}index.html#campaigns" class="mega-grid__card">キャンペーン一覧<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">会員限定ポイントをためる<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">会員限定ポイントをつかう<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">知る・体感する</h4>
                     <div class="mega-grid__cards mega-grid__cards--single">
                       <a href="${depth}enjoy/distillery.html#details" class="mega-grid__card">工場見学へ行こう<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">地域情報<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}enjoy/cm.html#details" class="mega-grid__card">CM・動画（公式YouTube）<span class="mega-menu__external" style="margin-left:6px;">↗</span><span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}enjoy/regional.html" class="mega-grid__card">地域情報<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                 </div>
@@ -68,23 +131,23 @@
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">芸術・文化・学術</h4>
                     <div class="mega-grid__cards">
-                      <a href="${depth}culture.html#art" class="mega-grid__card">サントリーホール<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}culture.html#art" class="mega-grid__card">サントリー美術館<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}culture.html#art" class="mega-grid__card">サントリー芸術財団<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}culture.html#academic" class="mega-grid__card">サントリー文化財団<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">サントリー生命科学財団<span class="mega-menu__external" style="margin-left:6px;">↗</span><span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">サントリー1万人の第九<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/hall.html" class="mega-grid__card">サントリーホール<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/museum.html" class="mega-grid__card">サントリー美術館<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/foundation.html" class="mega-grid__card">サントリー芸術財団<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/bunka-foundation.html" class="mega-grid__card">サントリー文化財団<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/science-foundation.html" class="mega-grid__card">サントリー生命科学財団<span class="mega-menu__external" style="margin-left:6px;">↗</span><span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/10000-daiku.html" class="mega-grid__card">サントリー1万人の第九<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">スポーツ</h4>
                     <div class="mega-grid__cards">
-                      <a href="${depth}culture.html#sports" class="mega-grid__card">ラグビーチーム<br><strong>東京サントリーサンゴリアス</strong><span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}culture.html#sports" class="mega-grid__card">バレーボールチーム<br><strong>サントリーサンバーズ大阪</strong><span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">宮里藍<br><strong>サントリーレディスオープン</strong><span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">サントリードリームマッチ<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">チャレンジド・スポーツ<br><strong>プロジェクト</strong><span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}culture.html#sports" class="mega-grid__card">サントリーのスポーツ活動<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/sports-sungoliath.html" class="mega-grid__card">ラグビーチーム<br><strong>東京サントリーサンゴリアス</strong><span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/sports-sunbirds.html" class="mega-grid__card">バレーボールチーム<br><strong>サントリーサンバーズ大阪</strong><span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/ladies-open.html" class="mega-grid__card">宮里藍<br><strong>サントリーレディスオープン</strong><span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/dream-match.html" class="mega-grid__card">サントリードリームマッチ<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/challenged-sports.html" class="mega-grid__card">チャレンジド・スポーツ<br><strong>プロジェクト</strong><span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}culture/sports-sponsorship.html" class="mega-grid__card">サントリーのスポーツ活動<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                 </div>
@@ -106,20 +169,20 @@
                     <h4 class="mega-grid__heading">サントリーグループのサステナビリティ経営</h4>
                     <div class="mega-grid__cards">
                       <a href="${depth}sustainability.html" class="mega-grid__card">ESG情報ポータルTOP<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}sustainability.html" class="mega-grid__card">トップメッセージ<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}sustainability.html" class="mega-grid__card">2030年目標<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}sustainability.html#water" class="mega-grid__card">Our Focus Areas<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/message.html" class="mega-grid__card">トップメッセージ<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/goals2030.html" class="mega-grid__card">2030年目標<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/water.html" class="mega-grid__card">Our Focus Areas<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">活動紹介サイト</h4>
                     <div class="mega-grid__cards">
-                      <a href="${depth}sustainability.html#water" class="mega-grid__card">サントリー 天然水の森<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">サントリーの愛鳥活動<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}sustainability.html#water" class="mega-grid__card">サントリー「水育」<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">サントリー サステなミライ<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="#" class="mega-grid__card">サステナビリティストーリーズ<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}sustainability.html#society" class="mega-grid__card">「人は資本」の経営<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/forest.html" class="mega-grid__card">サントリー 天然水の森<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/birds.html" class="mega-grid__card">サントリーの愛鳥活動<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/mizuiku.html" class="mega-grid__card">サントリー「水育」<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/sustanamirail.html" class="mega-grid__card">サントリー サステなミライ<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/stories.html" class="mega-grid__card">サステナビリティストーリーズ<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}sustainability/health.html" class="mega-grid__card">「人は資本」の経営<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                 </div>
@@ -136,38 +199,31 @@
                 <div class="mega-grid__top">
                   <a href="${depth}company.html" class="mega-grid__top-link">企業情報TOP<span class="mega-grid__arw">&rsaquo;</span></a>
                 </div>
-                <div class="mega-grid__sections mega-grid__sections--four">
+                <div class="mega-grid__sections">
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">企業理念</h4>
                     <div class="mega-grid__cards mega-grid__cards--single">
-                      <a href="${depth}company.html#philosophy" class="mega-grid__card">トップメッセージ<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html#philosophy" class="mega-grid__card">グループ企業理念<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html#philosophy" class="mega-grid__card">志がつなぐ<br>サントリーの企業活動<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/message.html" class="mega-grid__card">トップメッセージ<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/philosophy.html" class="mega-grid__card">グループ企業理念<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/spirit.html" class="mega-grid__card">志がつなぐ<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/activities.html" class="mega-grid__card">サントリーの企業活動<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">会社案内</h4>
                     <div class="mega-grid__cards mega-grid__cards--single">
-                      <a href="${depth}company.html#overview" class="mega-grid__card">企業概要<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html#group" class="mega-grid__card">グループ企業一覧<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html#overview" class="mega-grid__card">事業所一覧<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html" class="mega-grid__card">事業紹介<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/overview.html" class="mega-grid__card">企業概要<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/group.html" class="mega-grid__card">グループ企業一覧<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/offices.html" class="mega-grid__card">事業所一覧<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/business.html" class="mega-grid__card">事業紹介<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">財務・人材・採用</h4>
                     <div class="mega-grid__cards mega-grid__cards--single">
-                      <a href="${depth}company.html#ir" class="mega-grid__card">財務情報<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html#recruit" class="mega-grid__card">採用情報<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html#recruit" class="mega-grid__card">「人は資本」の経営<span class="mega-grid__arw">&rsaquo;</span></a>
-                    </div>
-                  </div>
-                  <div class="mega-grid__section">
-                    <h4 class="mega-grid__heading">品質・安全・技術</h4>
-                    <div class="mega-grid__cards mega-grid__cards--single">
-                      <a href="${depth}company.html" class="mega-grid__card">品質への取り組み<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html" class="mega-grid__card">研究開発への取り組み<span class="mega-grid__arw">&rsaquo;</span></a>
-                      <a href="${depth}company.html" class="mega-grid__card">デジタルへの取り組み<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/ir-financial.html" class="mega-grid__card">財務情報<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/recruit-newgrad.html" class="mega-grid__card">採用情報<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}company/human-capital.html" class="mega-grid__card">「人は資本」の経営<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                 </div>
@@ -222,28 +278,28 @@
         <li class="mobile-nav__group">
           <button class="mobile-nav__toggle">文化・スポーツ<span class="mobile-nav__arrow">+</span></button>
           <ul class="mobile-nav__sub">
-            <li><a href="${depth}culture.html#art">サントリーホール</a></li>
-            <li><a href="${depth}culture.html#art">サントリー美術館</a></li>
-            <li><a href="${depth}culture.html#sports">東京サントリーサンゴリアス</a></li>
-            <li><a href="${depth}culture.html#sports">サントリーサンバーズ大阪</a></li>
+            <li><a href="${depth}culture/hall.html">サントリーホール</a></li>
+            <li><a href="${depth}culture/museum.html">サントリー美術館</a></li>
+            <li><a href="${depth}culture/sports-sungoliath.html">東京サントリーサンゴリアス</a></li>
+            <li><a href="${depth}culture/sports-sunbirds.html">サントリーサンバーズ大阪</a></li>
           </ul>
         </li>
         <li class="mobile-nav__group">
           <button class="mobile-nav__toggle">サステナビリティ<span class="mobile-nav__arrow">+</span></button>
           <ul class="mobile-nav__sub">
-            <li><a href="${depth}sustainability.html#water">水理念</a></li>
-            <li><a href="${depth}sustainability.html#water">天然水の森</a></li>
-            <li><a href="${depth}sustainability.html#environment">環境ビジョン2050</a></li>
-            <li><a href="${depth}sustainability.html#society">責任ある飲酒</a></li>
+            <li><a href="${depth}sustainability/water.html">水理念</a></li>
+            <li><a href="${depth}sustainability/forest.html">天然水の森</a></li>
+            <li><a href="${depth}sustainability/envision.html">環境ビジョン2050</a></li>
+            <li><a href="${depth}sustainability/drinking.html">責任ある飲酒</a></li>
           </ul>
         </li>
         <li class="mobile-nav__group">
           <button class="mobile-nav__toggle">企業情報<span class="mobile-nav__arrow">+</span></button>
           <ul class="mobile-nav__sub">
-            <li><a href="${depth}company.html#philosophy">企業理念</a></li>
-            <li><a href="${depth}company.html#overview">会社概要</a></li>
-            <li><a href="${depth}company.html#ir">IR情報</a></li>
-            <li><a href="${depth}company.html#recruit">採用情報</a></li>
+            <li><a href="${depth}company/philosophy.html">企業理念</a></li>
+            <li><a href="${depth}company/overview.html">会社概要</a></li>
+            <li><a href="${depth}company/ir-financial.html">IR情報</a></li>
+            <li><a href="${depth}company/recruit-newgrad.html">採用情報</a></li>
           </ul>
         </li>
       </ul>
@@ -339,6 +395,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ========================================
+  // Mega Category Accordion (商品情報)
+  // ========================================
+  document.addEventListener('click', (e) => {
+    const toggle = e.target.closest('.mega-category__toggle');
+    if (!toggle) return;
+    e.stopPropagation();
+    e.preventDefault();
+
+    const products = toggle.nextElementSibling;
+    const isOpen = toggle.classList.contains('is-open');
+
+    // Close all others
+    document.querySelectorAll('.mega-category__toggle').forEach(t => {
+      t.classList.remove('is-open');
+      if (t.nextElementSibling) t.nextElementSibling.classList.remove('is-open');
+    });
+
+    if (!isOpen && products) {
+      toggle.classList.add('is-open');
+      products.classList.add('is-open');
+    }
+  });
+
+  // ========================================
   // Mega Menu - close when clicking outside
   // ========================================
   document.addEventListener('click', (e) => {
@@ -364,6 +444,47 @@ document.addEventListener('DOMContentLoaded', () => {
           megaMenu.style.pointerEvents = '';
         }, 300);
       }
+    });
+  });
+
+  // ========================================
+  // Click-only Mega Menu (商品情報)
+  // ========================================
+  document.querySelectorAll('.js-mega-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const navItem = toggle.closest('.has-mega--click');
+      const megaMenu = navItem?.querySelector('.mega-menu');
+      if (!megaMenu) return;
+
+      const isOpen = megaMenu.classList.contains('is-open');
+
+      // Close all click-menus first
+      document.querySelectorAll('.has-mega--click .mega-menu').forEach(m => {
+        m.classList.remove('is-open');
+      });
+
+      if (!isOpen) {
+        megaMenu.classList.add('is-open');
+      }
+    });
+  });
+
+  // Close click-mega-menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.has-mega--click')) {
+      document.querySelectorAll('.has-mega--click .mega-menu').forEach(m => {
+        m.classList.remove('is-open');
+      });
+    }
+  });
+
+  // Close button inside click-mega-menu
+  document.querySelectorAll('.has-mega--click .js-mega-close').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const megaMenu = btn.closest('.mega-menu');
+      if (megaMenu) megaMenu.classList.remove('is-open');
     });
   });
 
