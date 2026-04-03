@@ -33,7 +33,7 @@
                 <div class="mega-grid__featured-product">
                   <a href="${depth}products/strongzero.html" class="mega-featured-product">
                     <div class="mega-featured-product__visual">
-                      <img src="${depth}images/strongzero-can.png" alt="-196 ストロングゼロ ダブルレモン" width="200" height="260" style="object-fit:contain; border-radius:8px; filter:drop-shadow(0 8px 24px rgba(0,0,40,0.4));">
+                      <img src="${depth}images/strongzero-can.png" alt="-196 ストロングゼロ ダブルレモン" width="200" height="260" style="object-fit:contain; border-radius:8px; mix-blend-mode:multiply; filter:drop-shadow(0 8px 24px rgba(0,0,40,0.4));">
                     </div>
                     <div class="mega-featured-product__info">
                       <span class="mega-featured-product__label">PICK UP</span>
@@ -42,49 +42,6 @@
                       <span class="mega-featured-product__link">詳しく見る<span class="mega-grid__arw">&rsaquo;</span></span>
                     </div>
                   </a>
-                </div>
-                <div class="mega-grid__sections">
-                  <div class="mega-grid__section mega-grid__section--full">
-                    <h4 class="mega-grid__heading">カテゴリ</h4>
-                    <div class="mega-category-list">
-                      <div class="mega-category">
-                        <button class="mega-category__toggle">ウイスキー<span class="mega-category__arrow">+</span></button>
-                        <div class="mega-category__products">
-                          <a href="${depth}products/yamazaki.html" class="mega-category__item">山崎</a>
-                          <a href="${depth}products/hakushu.html" class="mega-category__item">白州</a>
-                          <a href="${depth}products/hibiki.html" class="mega-category__item">響</a>
-                          <a href="${depth}products/kakubin.html" class="mega-category__item">角瓶</a>
-                          <a href="${depth}products/roku.html" class="mega-category__item">ROKU ジン</a>
-                        </div>
-                      </div>
-                      <div class="mega-category">
-                        <button class="mega-category__toggle">ビール・新ジャンル<span class="mega-category__arrow">+</span></button>
-                        <div class="mega-category__products">
-                          <a href="${depth}products/premiummalts.html" class="mega-category__item">ザ・プレミアム・モルツ</a>
-                          <a href="${depth}products/nama.html" class="mega-category__item">金麦ザ・ラガー</a>
-                          <a href="${depth}products/kinmugi.html" class="mega-category__item">金麦</a>
-                          <a href="${depth}products/psb.html" class="mega-category__item">パーフェクトサントリービール</a>
-                          <a href="${depth}products/allfree.html" class="mega-category__item">オールフリー</a>
-                        </div>
-                      </div>
-                      <div class="mega-category">
-                        <button class="mega-category__toggle">チューハイ・RTD<span class="mega-category__arrow">+</span></button>
-                        <div class="mega-category__products">
-                          <a href="${depth}products/strongzero.html" class="mega-category__item">-196 ストロングゼロ</a>
-                          <a href="${depth}products/minus196.html" class="mega-category__item">-196</a>
-                          <a href="${depth}products/horoyoi.html" class="mega-category__item">ほろよい</a>
-                          <a href="${depth}products/lemonsour.html" class="mega-category__item">こだわり酒場のレモンサワー</a>
-                          <a href="${depth}products/takohai.html" class="mega-category__item">タコハイ</a>
-                        </div>
-                      </div>
-                      <div class="mega-category">
-                        <button class="mega-category__toggle">ソフトドリンク<span class="mega-category__arrow">+</span></button>
-                        <div class="mega-category__products">
-                          <a href="${depth}products.html#softdrink" class="mega-category__item">サントリー天然水</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div class="mega-grid__close">
                   <button class="mega-grid__close-btn js-mega-close">&times; 閉じる</button>
@@ -99,11 +56,13 @@
                 <div class="mega-grid__top">
                   <a href="${depth}enjoy.html" class="mega-grid__top-link">知る・楽しむTOP<span class="mega-grid__arw">&rsaquo;</span></a>
                 </div>
-                <div class="mega-grid__sections">
+                <div class="mega-grid__sections mega-grid__sections--four">
                   <div class="mega-grid__section">
                     <h4 class="mega-grid__heading">キャンペーン</h4>
                     <div class="mega-grid__cards mega-grid__cards--single">
                       <a href="${depth}index.html#campaigns" class="mega-grid__card">キャンペーン一覧<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}index.html#campaigns" class="mega-grid__card">プレゼントキャンペーン<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}index.html#campaigns" class="mega-grid__card">コラボキャンペーン<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                   <div class="mega-grid__section">
@@ -111,6 +70,20 @@
                     <div class="mega-grid__cards mega-grid__cards--single">
                       <a href="${depth}enjoy/distillery.html#details" class="mega-grid__card">工場見学へ行こう<span class="mega-grid__arw">&rsaquo;</span></a>
                       <a href="${depth}enjoy/regional.html" class="mega-grid__card">地域情報<span class="mega-grid__arw">&rsaquo;</span></a>
+                    </div>
+                  </div>
+                  <div class="mega-grid__section">
+                    <h4 class="mega-grid__heading">お酒の愉しみ方</h4>
+                    <div class="mega-grid__cards mega-grid__cards--single">
+                      <a href="${depth}enjoy/whisky-guide.html#details" class="mega-grid__card">ウイスキーの愉しみ方<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}enjoy/beer-guide.html#details" class="mega-grid__card">ビールのおいしい注ぎ方<span class="mega-grid__arw">&rsaquo;</span></a>
+                    </div>
+                  </div>
+                  <div class="mega-grid__section">
+                    <h4 class="mega-grid__heading">レシピ・マリアージュ</h4>
+                    <div class="mega-grid__cards mega-grid__cards--single">
+                      <a href="${depth}enjoy/cocktail-guide.html#details" class="mega-grid__card">カクテル・おつまみレシピ<span class="mega-grid__arw">&rsaquo;</span></a>
+                      <a href="${depth}enjoy/wine-guide.html#details" class="mega-grid__card">ワインと食のマリアージュ<span class="mega-grid__arw">&rsaquo;</span></a>
                     </div>
                   </div>
                 </div>
