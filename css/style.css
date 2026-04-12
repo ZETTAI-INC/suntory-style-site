@@ -2575,6 +2575,17 @@ img {
   transform: scale(1.08);
 }
 
+.alcohol-card__product-img {
+  max-height: 80%;
+  max-width: 70%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.alcohol-card:hover .alcohol-card__product-img {
+  transform: scale(1.08);
+}
+
 /* Whisky bottles */
 .whisky-yamazaki {
   background: linear-gradient(180deg, #8B6914, #C49A2A);
@@ -3667,6 +3678,112 @@ img {
   font-weight: 700;
   color: rgba(255, 255, 255, 0.4);
   letter-spacing: 0.15em;
+}
+
+/* Sports Cards Enhanced */
+.culture-card__img--rugby {
+  background: linear-gradient(135deg, #7f1d1d, #b91c1c, #dc2626);
+}
+.culture-card__img--volley {
+  background: linear-gradient(135deg, #c2410c, #ea580c, #f59e0b);
+}
+.culture-card__img--sponsor {
+  background: linear-gradient(135deg, #115e59, #0d9488, #14b8a6);
+}
+
+.culture-card__img--rugby,
+.culture-card__img--volley,
+.culture-card__img--sponsor {
+  position: relative;
+  overflow: hidden;
+}
+
+.sports-card__pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 50%);
+}
+.culture-card__img--rugby .sports-card__pattern {
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, transparent, transparent 18px, rgba(255,255,255,0.03) 18px, rgba(255,255,255,0.03) 20px);
+}
+.culture-card__img--volley .sports-card__pattern {
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 50%),
+    repeating-linear-gradient(-45deg, transparent, transparent 14px, rgba(255,255,255,0.04) 14px, rgba(255,255,255,0.04) 16px);
+}
+.culture-card__img--sponsor .sports-card__pattern {
+  background-image:
+    radial-gradient(circle at 30% 70%, rgba(255,255,255,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(255,255,255,0.08) 0%, transparent 50%),
+    repeating-conic-gradient(transparent 0deg, transparent 8deg, rgba(255,255,255,0.015) 8deg, rgba(255,255,255,0.015) 10deg);
+}
+
+.sports-card__visual {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.culture-card--sports:hover .sports-card__visual {
+  transform: scale(1.1);
+}
+
+.sports-card__icon {
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+}
+
+.sports-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 16px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.sports-card__badge {
+  align-self: flex-start;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.sports-card__team-name {
+  align-self: flex-end;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.18);
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+
+.sports-card__tag {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border: 1.5px solid;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
 }
 
 .culture-card__body {
