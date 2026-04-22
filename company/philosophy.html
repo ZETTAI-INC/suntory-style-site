@@ -6,51 +6,660 @@
   <title>グループ企業理念 | サントリー</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ===== Philosophy Page Styles ===== */
+
+    /* Hero */
+    .phil-hero {
+      padding-top: 70px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(160deg, #0a0f1a 0%, #0d1b3e 30%, #1a365d 60%, #1e4d6e 100%);
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .phil-hero__bg-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(91,194,220,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 30%, rgba(230,81,0,0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 90%, rgba(255,255,255,0.03) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    .phil-hero__lines {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .phil-hero__lines::before,
+    .phil-hero__lines::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .phil-hero__lines::before {
+      width: 600px; height: 600px;
+      top: -100px; right: -150px;
+      animation: phil-float 20s ease-in-out infinite;
+    }
+    .phil-hero__lines::after {
+      width: 400px; height: 400px;
+      bottom: -80px; left: -100px;
+      animation: phil-float 15s ease-in-out infinite reverse;
+    }
+    @keyframes phil-float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(5deg); }
+    }
+    .phil-hero__content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      padding: 0 24px;
+    }
+    .phil-hero__label {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      color: rgba(255,255,255,0.5);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 6px 24px;
+      border-radius: 30px;
+      margin-bottom: 40px;
+      backdrop-filter: blur(4px);
+    }
+    .phil-hero__main-text {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+    .phil-hero__sub-text {
+      font-size: 1rem;
+      line-height: 2;
+      color: rgba(255,255,255,0.65);
+      max-width: 600px;
+      margin: 0 auto 48px;
+      letter-spacing: 0.04em;
+    }
+    .phil-hero__scroll {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.6875rem;
+      letter-spacing: 0.2em;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .phil-hero__scroll:hover { color: rgba(255,255,255,0.7); }
+    .phil-hero__scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+      animation: phil-scroll-pulse 2s ease-in-out infinite;
+    }
+    @keyframes phil-scroll-pulse {
+      0%, 100% { opacity: 1; transform: scaleY(1); }
+      50% { opacity: 0.4; transform: scaleY(0.6); }
+    }
+
+    /* Breadcrumb */
+    .phil-breadcrumb {
+      padding: 20px 0;
+      font-size: 0.8125rem;
+      color: #999;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .phil-breadcrumb a { color: #e65100; text-decoration: none; }
+    .phil-breadcrumb a:hover { text-decoration: underline; }
+    .phil-breadcrumb span { margin: 0 8px; color: #ccc; }
+
+    /* Section base */
+    .phil-section {
+      padding: 100px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .phil-section--alt { background: #fafbfc; }
+    .phil-section--dark {
+      background: linear-gradient(160deg, #0a0f1a, #1a2744);
+      color: #fff;
+    }
+    .phil-section__inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Section titles */
+    .phil-section__label {
+      font-size: 0.6875rem;
+      letter-spacing: 0.25em;
+      color: #e65100;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .phil-section--dark .phil-section__label {
+      color: #5bc2dc;
+    }
+    .phil-section__heading {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    .phil-section__desc {
+      font-size: 0.9375rem;
+      line-height: 2;
+      color: #555;
+      max-width: 720px;
+    }
+    .phil-section--dark .phil-section__desc {
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* Philosophy cards (3 pillars) */
+    .phil-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 64px;
+    }
+    .phil-pillar {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), box-shadow 0.4s;
+      position: relative;
+    }
+    .phil-pillar:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    }
+    .phil-pillar__header {
+      padding: 40px 28px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .phil-pillar__header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+    }
+    .phil-pillar:nth-child(1) .phil-pillar__header::before { background: linear-gradient(90deg, #e65100, #ff8a50); }
+    .phil-pillar:nth-child(2) .phil-pillar__header::before { background: linear-gradient(90deg, #1565c0, #5bc2dc); }
+    .phil-pillar:nth-child(3) .phil-pillar__header::before { background: linear-gradient(90deg, #2e7d32, #66bb6a); }
+
+    .phil-pillar__num {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .phil-pillar:nth-child(1) .phil-pillar__num { color: rgba(230,81,0,0.12); }
+    .phil-pillar:nth-child(2) .phil-pillar__num { color: rgba(21,101,192,0.12); }
+    .phil-pillar:nth-child(3) .phil-pillar__num { color: rgba(46,125,50,0.12); }
+
+    .phil-pillar__title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.375rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 0.06em;
+    }
+    .phil-pillar__title-en {
+      font-size: 0.6875rem;
+      letter-spacing: 0.2em;
+      color: #aaa;
+      margin-bottom: 0;
+    }
+    .phil-pillar__body {
+      padding: 0 28px 32px;
+    }
+    .phil-pillar__text {
+      font-size: 0.875rem;
+      line-height: 1.9;
+      color: #666;
+    }
+
+    /* Mission / Vision / Values large feature */
+    .phil-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-top: 60px;
+    }
+    .phil-feature--reverse { direction: rtl; }
+    .phil-feature--reverse > * { direction: ltr; }
+
+    .phil-feature__visual {
+      aspect-ratio: 4 / 3;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .phil-feature__visual--water {
+      background: linear-gradient(160deg, #0d47a1, #1565c0, #42a5f5);
+    }
+    .phil-feature__visual--spirit {
+      background: linear-gradient(160deg, #bf360c, #e65100, #ff9800);
+    }
+    .phil-feature__visual--nature {
+      background: linear-gradient(160deg, #1b5e20, #2e7d32, #4caf50);
+    }
+    .phil-feature__visual-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 30% 70%, rgba(255,255,255,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 30%, rgba(255,255,255,0.08) 0%, transparent 50%);
+    }
+    .phil-feature__visual-text {
+      position: relative;
+      z-index: 1;
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 0.15em;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .phil-feature__content {}
+    .phil-feature__tag {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .phil-feature__tag--water { background: rgba(21,101,192,0.1); color: #1565c0; }
+    .phil-feature__tag--spirit { background: rgba(230,81,0,0.1); color: #e65100; }
+    .phil-feature__tag--nature { background: rgba(46,125,50,0.1); color: #2e7d32; }
+
+    .phil-feature__title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 0.06em;
+      line-height: 1.5;
+    }
+    .phil-feature__text {
+      font-size: 0.9rem;
+      line-height: 2;
+      color: #555;
+    }
+
+    /* Timeline */
+    .phil-timeline {
+      position: relative;
+      margin-top: 64px;
+      padding-left: 40px;
+    }
+    .phil-timeline::before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #e65100, #5bc2dc, #2e7d32);
+      border-radius: 2px;
+    }
+    .phil-timeline__item {
+      position: relative;
+      padding-bottom: 48px;
+    }
+    .phil-timeline__item:last-child { padding-bottom: 0; }
+    .phil-timeline__dot {
+      position: absolute;
+      left: -34px;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid #e65100;
+      z-index: 1;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .phil-timeline__item:nth-child(2) .phil-timeline__dot { border-color: #1565c0; }
+    .phil-timeline__item:nth-child(3) .phil-timeline__dot { border-color: #ff9800; }
+    .phil-timeline__item:nth-child(4) .phil-timeline__dot { border-color: #2e7d32; }
+    .phil-timeline__item:nth-child(5) .phil-timeline__dot { border-color: #5bc2dc; }
+    .phil-timeline__item:hover .phil-timeline__dot {
+      transform: scale(1.3);
+      background: currentColor;
+    }
+    .phil-timeline__year {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #e65100;
+      margin-bottom: 6px;
+    }
+    .phil-timeline__item:nth-child(2) .phil-timeline__year { color: #1565c0; }
+    .phil-timeline__item:nth-child(3) .phil-timeline__year { color: #ff9800; }
+    .phil-timeline__item:nth-child(4) .phil-timeline__year { color: #2e7d32; }
+    .phil-timeline__item:nth-child(5) .phil-timeline__year { color: #5bc2dc; }
+    .phil-timeline__title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #1a1a1a;
+    }
+    .phil-timeline__text {
+      font-size: 0.85rem;
+      color: #777;
+      line-height: 1.7;
+    }
+
+    /* Quote */
+    .phil-quote {
+      text-align: center;
+      margin-top: 64px;
+      padding: 60px 40px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .phil-quote__mark {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 4rem;
+      color: rgba(255,255,255,0.1);
+      line-height: 1;
+      margin-bottom: -16px;
+    }
+    .phil-quote__text {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+      font-weight: 700;
+      line-height: 2;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 24px;
+    }
+    .phil-quote__author {
+      font-size: 0.8125rem;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.1em;
+    }
+
+    /* CTA */
+    .phil-cta {
+      text-align: center;
+      margin-top: 64px;
+    }
+    .phil-cta__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, #e65100, #ff8a50);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 50px;
+      letter-spacing: 0.06em;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 20px rgba(230,81,0,0.3);
+    }
+    .phil-cta__btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(230,81,0,0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .phil-hero { min-height: 70vh; }
+      .phil-pillars {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .phil-feature {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .phil-feature--reverse { direction: ltr; }
+      .phil-section { padding: 60px 20px; }
+      .phil-quote { padding: 40px 24px; }
+    }
+  </style>
 </head>
 <body>
 
   <header id="header"></header>
 
-  <section class="subpage-hero" style="background: linear-gradient(135deg, #0a1628, #1a365d);">
-    <div class="subpage-hero__inner">
-      <p class="subpage-hero__subtitle">CORPORATE PHILOSOPHY</p>
-      <h1 class="subpage-hero__title">グループ企業理念</h1>
+  <!-- ===== HERO ===== -->
+  <section class="phil-hero">
+    <div class="phil-hero__bg-pattern"></div>
+    <div class="phil-hero__lines"></div>
+    <div class="phil-hero__content">
+      <span class="phil-hero__label">CORPORATE PHILOSOPHY</span>
+      <h1 class="phil-hero__main-text">
+        人と自然と響きあう
+      </h1>
+      <p class="phil-hero__sub-text">
+        自然の恵みに感謝し、人々の生活を豊かにする。<br>
+        サントリーグループが受け継ぐ、創業からの想い。
+      </p>
+      <a href="#pillars" class="phil-hero__scroll">
+        SCROLL
+        <span class="phil-hero__scroll-line"></span>
+      </a>
     </div>
   </section>
 
-  <nav class="breadcrumb">
-    <ol class="breadcrumb__list">
-      <li class="breadcrumb__item"><a href="../index.html">ホーム</a></li>
-      <li class="breadcrumb__item"><a href="../company.html">企業情報</a></li>
-      <li class="breadcrumb__item">グループ企業理念</li>
-    </ol>
+  <!-- ===== BREADCRUMB ===== -->
+  <nav class="phil-breadcrumb">
+    <a href="../index.html">ホーム</a><span>›</span>
+    <a href="../company.html">企業情報</a><span>›</span>
+    グループ企業理念
   </nav>
 
-  <main>
+  <!-- ===== 3 PILLARS ===== -->
+  <section class="phil-section" id="pillars">
+    <div class="phil-section__inner">
+      <p class="phil-section__label">OUR PHILOSOPHY</p>
+      <h2 class="phil-section__heading">サントリーグループを支える<br>3つの精神</h2>
+      <p class="phil-section__desc">
+        創業以来受け継がれてきた3つの精神が、サントリーグループのすべての事業活動の根幹をなしています。
+      </p>
 
-    <section class="section" id="details">
-      <div class="section__inner">
-        <h2 class="section__title">人と自然と響きあう</h2>
-        <p class="section__text">サントリーグループは、「人と自然と響きあう」を企業理念に掲げ、自然の恵みに感謝し、人々の生活を豊かにする事業活動を展開しています。この理念は、創業者・鳥井信治郎の志を受け継ぎ、すべてのグループ会社の活動の根幹をなしています。</p>
+      <div class="phil-pillars">
+        <!-- Pillar 1 -->
+        <div class="phil-pillar">
+          <div class="phil-pillar__header">
+            <p class="phil-pillar__num">01</p>
+            <h3 class="phil-pillar__title">やってみなはれ</h3>
+            <p class="phil-pillar__title-en">YATTE MINAHARE</p>
+          </div>
+          <div class="phil-pillar__body">
+            <p class="phil-pillar__text">
+              失敗を恐れず、新しいことに果敢にチャレンジする精神。創業者・鳥井信治郎が生涯を通じて貫いた挑戦の姿勢は、今も世界中のグループ社員に息づいています。
+            </p>
+          </div>
+        </div>
+        <!-- Pillar 2 -->
+        <div class="phil-pillar">
+          <div class="phil-pillar__header">
+            <p class="phil-pillar__num">02</p>
+            <h3 class="phil-pillar__title">利益三分主義</h3>
+            <p class="phil-pillar__title-en">RIEKI SANBUN SHUGI</p>
+          </div>
+          <div class="phil-pillar__body">
+            <p class="phil-pillar__text">
+              事業で得た利益を「お客様へのサービス」「社会への貢献」「次なる成長への投資」の三つに分配する思想。社会との共生を大切にする企業姿勢の原点です。
+            </p>
+          </div>
+        </div>
+        <!-- Pillar 3 -->
+        <div class="phil-pillar">
+          <div class="phil-pillar__header">
+            <p class="phil-pillar__num">03</p>
+            <h3 class="phil-pillar__title">水と生きる</h3>
+            <p class="phil-pillar__title-en">MIZU TO IKIRU</p>
+          </div>
+          <div class="phil-pillar__body">
+            <p class="phil-pillar__text">
+              すべての事業の源泉である水。自然の恵みに感謝し、水源涵養活動や環境保全に取り組み、持続可能な社会の実現を目指す約束の言葉です。
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section--alt">
-      <div class="section__inner">
-        <h2 class="section__title">やってみなはれ</h2>
-        <p class="section__text">「やってみなはれ」——創業以来、サントリーグループの挑戦の精神を表す言葉です。失敗を恐れず、新しいことに果敢にチャレンジする姿勢が、数々のイノベーションを生み出してきました。この精神は世界中のグループ社員に共有されています。</p>
+  <!-- ===== FEATURE: 水と生きる ===== -->
+  <section class="phil-section phil-section--alt">
+    <div class="phil-section__inner">
+      <div class="phil-feature">
+        <div class="phil-feature__visual phil-feature__visual--water">
+          <div class="phil-feature__visual-pattern"></div>
+          <span class="phil-feature__visual-text">水と<br>生きる</span>
+        </div>
+        <div class="phil-feature__content">
+          <span class="phil-feature__tag phil-feature__tag--water">PROMISE</span>
+          <h3 class="phil-feature__title">水と生きる — <br>サントリーの約束</h3>
+          <p class="phil-feature__text">
+            サントリーグループにとって水はすべての事業の源泉です。天然水の森活動を全国21カ所、約12,000ヘクタールで展開し、自然の水循環を守りながら、持続可能な水資源の利用に取り組んでいます。「水と生きる」は、自然への感謝と未来への責任を込めた約束の言葉です。
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="section__inner">
-        <h2 class="section__title">利益三分主義</h2>
-        <p class="section__text">サントリーは創業以来、事業で得た利益をお客様・社会・次の投資の三つに分配する「利益三分主義」を実践してきました。社会との共生を大切にし、文化・社会貢献活動に積極的に取り組んでいます。</p>
+  <!-- ===== FEATURE: やってみなはれ ===== -->
+  <section class="phil-section">
+    <div class="phil-section__inner">
+      <div class="phil-feature phil-feature--reverse">
+        <div class="phil-feature__visual phil-feature__visual--spirit">
+          <div class="phil-feature__visual-pattern"></div>
+          <span class="phil-feature__visual-text">やって<br>みなはれ</span>
+        </div>
+        <div class="phil-feature__content">
+          <span class="phil-feature__tag phil-feature__tag--spirit">SPIRIT</span>
+          <h3 class="phil-feature__title">挑戦の精神が<br>イノベーションを生む</h3>
+          <p class="phil-feature__text">
+            1899年、鳥井信治郎がぶどう酒の製造販売を始めたとき、周囲は誰も賛同しませんでした。しかし「やってみなはれ」の一言が、日本初の本格ウイスキーづくりへの挑戦を後押しし、やがてジャパニーズウイスキーを世界に知らしめました。この精神は100年以上経った今も、新たな価値創造の原動力となっています。
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- ===== FEATURE: 自然との共生 ===== -->
+  <section class="phil-section phil-section--alt">
+    <div class="phil-section__inner">
+      <div class="phil-feature">
+        <div class="phil-feature__visual phil-feature__visual--nature">
+          <div class="phil-feature__visual-pattern"></div>
+          <span class="phil-feature__visual-text">自然と<br>響きあう</span>
+        </div>
+        <div class="phil-feature__content">
+          <span class="phil-feature__tag phil-feature__tag--nature">SUSTAINABILITY</span>
+          <h3 class="phil-feature__title">人と自然が<br>響きあう世界へ</h3>
+          <p class="phil-feature__text">
+            サントリーグループは、自然の恵みなくして事業は成り立たないという認識のもと、環境経営を推進しています。CO2排出削減、プラスチック戦略、生物多様性の保全など、多角的なアプローチで地球環境の保全に取り組み、次の世代にかけがえのない自然を引き継ぎます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== HISTORY ===== -->
+  <section class="phil-section">
+    <div class="phil-section__inner">
+      <p class="phil-section__label">HISTORY</p>
+      <h2 class="phil-section__heading">理念の歩み</h2>
+      <p class="phil-section__desc">
+        創業から現在まで、サントリーの企業理念がどのように受け継がれ、進化してきたかをご紹介します。
+      </p>
+
+      <div class="phil-timeline">
+        <div class="phil-timeline__item">
+          <div class="phil-timeline__dot"></div>
+          <p class="phil-timeline__year">1899</p>
+          <h4 class="phil-timeline__title">鳥井商店 創業</h4>
+          <p class="phil-timeline__text">鳥井信治郎が大阪でぶどう酒の製造販売を開始。「やってみなはれ」の精神で日本の洋酒文化の礎を築く。</p>
+        </div>
+        <div class="phil-timeline__item">
+          <div class="phil-timeline__dot"></div>
+          <p class="phil-timeline__year">1923</p>
+          <h4 class="phil-timeline__title">山崎蒸溜所 建設開始</h4>
+          <p class="phil-timeline__text">日本初のモルトウイスキー蒸溜所を京都・山崎に建設。「日本人の繊細な味覚に合うウイスキーを」という信念が結実。</p>
+        </div>
+        <div class="phil-timeline__item">
+          <div class="phil-timeline__dot"></div>
+          <p class="phil-timeline__year">1961</p>
+          <h4 class="phil-timeline__title">サントリー美術館 開館</h4>
+          <p class="phil-timeline__text">「利益三分主義」に基づく社会貢献活動の象徴。文化・芸術の振興を通じて社会に貢献する姿勢を体現。</p>
+        </div>
+        <div class="phil-timeline__item">
+          <div class="phil-timeline__dot"></div>
+          <p class="phil-timeline__year">2003</p>
+          <h4 class="phil-timeline__title">天然水の森 活動開始</h4>
+          <p class="phil-timeline__text">「水と生きる」を約束に、全国の水源涵養エリアで森林保全活動を本格始動。自然との共生を実践へ。</p>
+        </div>
+        <div class="phil-timeline__item">
+          <div class="phil-timeline__dot"></div>
+          <p class="phil-timeline__year">2014</p>
+          <h4 class="phil-timeline__title">グローバル展開の加速</h4>
+          <p class="phil-timeline__text">ビーム社を取得し、世界有数のスピリッツカンパニーへ。「人と自然と響きあう」理念をグローバルに展開。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE ===== -->
+  <section class="phil-section phil-section--dark">
+    <div class="phil-section__inner">
+      <div class="phil-quote">
+        <p class="phil-quote__mark">"</p>
+        <p class="phil-quote__text">
+          やってみなはれ。<br>
+          やらなわからしまへんで。
+        </p>
+        <p class="phil-quote__author">— 鳥井信治郎（サントリー創業者）</p>
+      </div>
+
+      <div class="phil-cta">
+        <a href="../company.html" class="phil-cta__btn">
+          企業情報をもっと見る
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__logo">
