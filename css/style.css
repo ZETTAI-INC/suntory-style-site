@@ -186,16 +186,9 @@ img {
 }
 
 #header.is-transparent {
-  background: transparent;
-  border-bottom-color: transparent;
-}
-
-#header.is-transparent .logo-text {
-  fill: #fff;
-}
-
-#header.is-transparent .header__nav-list > .header__nav-item > a {
-  color: #fff;
+  background: linear-gradient(90deg, rgba(255,255,255,0.97), rgba(245,240,255,0.95), rgba(255,248,240,0.97));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .header__inner {
@@ -245,13 +238,6 @@ img {
   background-clip: text;
 }
 
-#header.is-transparent .header__nav-item:hover > a {
-  background: linear-gradient(135deg, #ffb74d, #ff8a65);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: #ffb74d;
-}
 
 /* Search button */
 .header__actions {
@@ -274,9 +260,6 @@ img {
   color: #e91e63;
 }
 
-#header.is-transparent .header__search-btn {
-  color: #fff;
-}
 
 /* ========================================
    MEGA MENU
@@ -3382,6 +3365,66 @@ img {
   border-radius: 20px;
   margin-bottom: 12px;
   letter-spacing: 0.03em;
+}
+
+/* Flavor List (text-based lineup) */
+.flavor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.flavor-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.flavor-item:first-child {
+  padding-top: 0;
+}
+
+.flavor-item:last-child {
+  border-bottom: none;
+}
+
+.flavor-item__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.flavor-item__content {
+  flex: 1;
+}
+
+.flavor-item__name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.flavor-item__badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #e65100;
+  border: 1px solid #e65100;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.flavor-item__desc {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.9;
 }
 
 /* Timeline (company history) */
